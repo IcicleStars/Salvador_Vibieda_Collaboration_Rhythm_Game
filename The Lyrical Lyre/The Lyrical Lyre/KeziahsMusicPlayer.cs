@@ -111,7 +111,7 @@ namespace Music_Player
              myPlayer.SoundLocation = txtSongFilePath.Text;
 
              // Play
-             myPlayer.Play();
+             //myPlayer.Play();
         }
 
      
@@ -129,7 +129,7 @@ namespace Music_Player
             txtSongFilePath.Text = songFilePaths[nextSongIndex];
             listboxSongNames.SelectedIndex = nextSongIndex;
 
-            playSong();
+            //playSong();
         }
 
         private void stopSong()
@@ -275,6 +275,14 @@ namespace Music_Player
             {
                 nextSong();
             }
+        }
+
+        // Create form variable
+        The_Lyrical_Lyre.FormMain open;
+        private void openOpeningFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            open = new The_Lyrical_Lyre.FormMain();
+            open.Show();
         }
     }
 }

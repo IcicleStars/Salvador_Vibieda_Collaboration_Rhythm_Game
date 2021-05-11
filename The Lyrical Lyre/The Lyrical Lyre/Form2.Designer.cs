@@ -42,6 +42,7 @@ namespace The_Lyrical_Lyre
             this.lbDifficulty = new System.Windows.Forms.Label();
             this.timerDetectBool = new System.Windows.Forms.Timer(this.components);
             this.timerAnimateDifficulty = new System.Windows.Forms.Timer(this.components);
+            this.timerAnimateSong = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // button1
@@ -76,7 +77,7 @@ namespace The_Lyrical_Lyre
             // 
             // btnSong3
             // 
-            this.btnSong3.Location = new System.Drawing.Point(459, 290);
+            this.btnSong3.Location = new System.Drawing.Point(459, 285);
             this.btnSong3.Name = "btnSong3";
             this.btnSong3.Size = new System.Drawing.Size(153, 56);
             this.btnSong3.TabIndex = 3;
@@ -150,6 +151,11 @@ namespace The_Lyrical_Lyre
             this.timerAnimateDifficulty.Interval = 33;
             this.timerAnimateDifficulty.Tick += new System.EventHandler(this.timerAnimateDifficulty_Tick);
             // 
+            // timerAnimateSong
+            // 
+            this.timerAnimateSong.Interval = 33;
+            this.timerAnimateSong.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // FormSelect
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 41F);
@@ -189,5 +195,6 @@ namespace The_Lyrical_Lyre
         private System.Windows.Forms.Label lbDifficulty;
         private System.Windows.Forms.Timer timerDetectBool;
         private System.Windows.Forms.Timer timerAnimateDifficulty;
+        private System.Windows.Forms.Timer timerAnimateSong;
     }
 }

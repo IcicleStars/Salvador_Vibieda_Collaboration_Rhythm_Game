@@ -54,6 +54,7 @@
             this.musicMenuReplay = new System.Windows.Forms.ToolStripMenuItem();
             this.musicMenuForward = new System.Windows.Forms.ToolStripMenuItem();
             this.musicMenuBackward = new System.Windows.Forms.ToolStripMenuItem();
+            this.openOpeningFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.albumPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picStop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNext)).BeginInit();
@@ -66,17 +67,17 @@
             // lbCurrentSong
             // 
             this.lbCurrentSong.AutoSize = true;
-            this.lbCurrentSong.Font = new System.Drawing.Font("Century Gothic", 25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.lbCurrentSong.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.lbCurrentSong.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbCurrentSong.Location = new System.Drawing.Point(9, 38);
             this.lbCurrentSong.Name = "lbCurrentSong";
-            this.lbCurrentSong.Size = new System.Drawing.Size(225, 40);
+            this.lbCurrentSong.Size = new System.Drawing.Size(224, 39);
             this.lbCurrentSong.TabIndex = 4;
             this.lbCurrentSong.Text = "Music Player";
             // 
             // listboxSongFilePaths
             // 
-            this.listboxSongFilePaths.Font = new System.Drawing.Font("Century Gothic", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listboxSongFilePaths.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listboxSongFilePaths.FormattingEnabled = true;
             this.listboxSongFilePaths.ItemHeight = 16;
             this.listboxSongFilePaths.Location = new System.Drawing.Point(416, 96);
@@ -89,22 +90,22 @@
             // 
             this.listboxSongNames.BackColor = System.Drawing.Color.Silver;
             this.listboxSongNames.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listboxSongNames.Font = new System.Drawing.Font("Century Gothic", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listboxSongNames.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listboxSongNames.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.listboxSongNames.FormattingEnabled = true;
-            this.listboxSongNames.ItemHeight = 23;
+            this.listboxSongNames.ItemHeight = 25;
             this.listboxSongNames.Location = new System.Drawing.Point(0, 287);
             this.listboxSongNames.Name = "listboxSongNames";
-            this.listboxSongNames.Size = new System.Drawing.Size(698, 230);
+            this.listboxSongNames.Size = new System.Drawing.Size(698, 225);
             this.listboxSongNames.TabIndex = 8;
             this.listboxSongNames.SelectedIndexChanged += new System.EventHandler(this.listboxSongNames_SelectedIndexChanged);
             // 
             // txtSongFilePath
             // 
-            this.txtSongFilePath.Font = new System.Drawing.Font("Century Gothic", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSongFilePath.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSongFilePath.Location = new System.Drawing.Point(16, 484);
             this.txtSongFilePath.Name = "txtSongFilePath";
-            this.txtSongFilePath.Size = new System.Drawing.Size(641, 24);
+            this.txtSongFilePath.Size = new System.Drawing.Size(641, 23);
             this.txtSongFilePath.TabIndex = 10;
             // 
             // DialogPrompt
@@ -124,7 +125,7 @@
             // 
             // lbPlaylist
             // 
-            this.lbPlaylist.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPlaylist.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPlaylist.ForeColor = System.Drawing.SystemColors.Window;
             this.lbPlaylist.Location = new System.Drawing.Point(235, 96);
             this.lbPlaylist.Name = "lbPlaylist";
@@ -138,7 +139,7 @@
             this.lbPlaylistName.ForeColor = System.Drawing.Color.White;
             this.lbPlaylistName.Location = new System.Drawing.Point(232, 133);
             this.lbPlaylistName.Name = "lbPlaylistName";
-            this.lbPlaylistName.Size = new System.Drawing.Size(156, 40);
+            this.lbPlaylistName.Size = new System.Drawing.Size(164, 39);
             this.lbPlaylistName.TabIndex = 14;
             this.lbPlaylistName.Text = "Playlist 1";
             // 
@@ -146,11 +147,11 @@
             // 
             this.txtPlaylistDescription.BackColor = System.Drawing.Color.Silver;
             this.txtPlaylistDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPlaylistDescription.Font = new System.Drawing.Font("Century Gothic", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPlaylistDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPlaylistDescription.ForeColor = System.Drawing.Color.White;
             this.txtPlaylistDescription.Location = new System.Drawing.Point(239, 190);
             this.txtPlaylistDescription.Name = "txtPlaylistDescription";
-            this.txtPlaylistDescription.Size = new System.Drawing.Size(189, 25);
+            this.txtPlaylistDescription.Size = new System.Drawing.Size(189, 23);
             this.txtPlaylistDescription.TabIndex = 15;
             this.txtPlaylistDescription.Text = "Description";
             // 
@@ -216,7 +217,7 @@
             this.musicPlayerSettingsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(684, 27);
+            this.menuStrip1.Size = new System.Drawing.Size(684, 28);
             this.menuStrip1.TabIndex = 24;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -226,29 +227,29 @@
             this.downloadMenuEnhypen,
             this.downloadMenuLoona,
             this.downloadMenuNCTU});
-            this.downloadMoreSongsToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.downloadMoreSongsToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.downloadMoreSongsToolStripMenuItem.Name = "downloadMoreSongsToolStripMenuItem";
-            this.downloadMoreSongsToolStripMenuItem.Size = new System.Drawing.Size(193, 23);
+            this.downloadMoreSongsToolStripMenuItem.Size = new System.Drawing.Size(201, 24);
             this.downloadMoreSongsToolStripMenuItem.Text = "Download More Songs";
             // 
             // downloadMenuEnhypen
             // 
             this.downloadMenuEnhypen.Name = "downloadMenuEnhypen";
-            this.downloadMenuEnhypen.Size = new System.Drawing.Size(271, 24);
+            this.downloadMenuEnhypen.Size = new System.Drawing.Size(285, 24);
             this.downloadMenuEnhypen.Text = "Enhypen - Let Me In";
             this.downloadMenuEnhypen.Click += new System.EventHandler(this.downloadMenuEnhypen_Click);
             // 
             // downloadMenuLoona
             // 
             this.downloadMenuLoona.Name = "downloadMenuLoona";
-            this.downloadMenuLoona.Size = new System.Drawing.Size(271, 24);
+            this.downloadMenuLoona.Size = new System.Drawing.Size(285, 24);
             this.downloadMenuLoona.Text = "Loona - 1200";
             this.downloadMenuLoona.Click += new System.EventHandler(this.downloadMenuLoona_Click);
             // 
             // downloadMenuNCTU
             // 
             this.downloadMenuNCTU.Name = "downloadMenuNCTU";
-            this.downloadMenuNCTU.Size = new System.Drawing.Size(271, 24);
+            this.downloadMenuNCTU.Size = new System.Drawing.Size(285, 24);
             this.downloadMenuNCTU.Text = "NCT U - Neo Got My Back";
             this.downloadMenuNCTU.Click += new System.EventHandler(this.downloadMenuNCTU_Click);
             // 
@@ -259,50 +260,58 @@
             this.musicMenuStop,
             this.musicMenuReplay,
             this.musicMenuForward,
-            this.musicMenuBackward});
-            this.musicPlayerSettingsToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.musicMenuBackward,
+            this.openOpeningFormToolStripMenuItem});
+            this.musicPlayerSettingsToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.musicPlayerSettingsToolStripMenuItem.Name = "musicPlayerSettingsToolStripMenuItem";
-            this.musicPlayerSettingsToolStripMenuItem.Size = new System.Drawing.Size(178, 23);
+            this.musicPlayerSettingsToolStripMenuItem.Size = new System.Drawing.Size(193, 24);
             this.musicPlayerSettingsToolStripMenuItem.Text = "Music Player Settings";
             // 
             // musicMenuPlay
             // 
             this.musicMenuPlay.Name = "musicMenuPlay";
-            this.musicMenuPlay.Size = new System.Drawing.Size(157, 24);
+            this.musicMenuPlay.Size = new System.Drawing.Size(239, 24);
             this.musicMenuPlay.Text = "Play";
             this.musicMenuPlay.Click += new System.EventHandler(this.musicMenuPlay_Click);
             // 
             // musicMenuStop
             // 
             this.musicMenuStop.Name = "musicMenuStop";
-            this.musicMenuStop.Size = new System.Drawing.Size(157, 24);
+            this.musicMenuStop.Size = new System.Drawing.Size(239, 24);
             this.musicMenuStop.Text = "Stop";
             this.musicMenuStop.Click += new System.EventHandler(this.musicMenuStop_Click);
             // 
             // musicMenuReplay
             // 
             this.musicMenuReplay.Name = "musicMenuReplay";
-            this.musicMenuReplay.Size = new System.Drawing.Size(157, 24);
+            this.musicMenuReplay.Size = new System.Drawing.Size(239, 24);
             this.musicMenuReplay.Text = "Replay";
             this.musicMenuReplay.Click += new System.EventHandler(this.musicMenuReplay_Click);
             // 
             // musicMenuForward
             // 
             this.musicMenuForward.Name = "musicMenuForward";
-            this.musicMenuForward.Size = new System.Drawing.Size(157, 24);
+            this.musicMenuForward.Size = new System.Drawing.Size(239, 24);
             this.musicMenuForward.Text = "Forward";
             this.musicMenuForward.Click += new System.EventHandler(this.musicMenuForward_Click);
             // 
             // musicMenuBackward
             // 
             this.musicMenuBackward.Name = "musicMenuBackward";
-            this.musicMenuBackward.Size = new System.Drawing.Size(157, 24);
+            this.musicMenuBackward.Size = new System.Drawing.Size(239, 24);
             this.musicMenuBackward.Text = "Backward";
             this.musicMenuBackward.Click += new System.EventHandler(this.musicMenuBackward_Click);
             // 
+            // openOpeningFormToolStripMenuItem
+            // 
+            this.openOpeningFormToolStripMenuItem.Name = "openOpeningFormToolStripMenuItem";
+            this.openOpeningFormToolStripMenuItem.Size = new System.Drawing.Size(239, 24);
+            this.openOpeningFormToolStripMenuItem.Text = "Open Opening Form";
+            this.openOpeningFormToolStripMenuItem.Click += new System.EventHandler(this.openOpeningFormToolStripMenuItem_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(20F, 40F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(20F, 38F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(684, 640);
@@ -320,7 +329,7 @@
             this.Controls.Add(this.listboxSongNames);
             this.Controls.Add(this.lbCurrentSong);
             this.Controls.Add(this.menuStrip1);
-            this.Font = new System.Drawing.Font("Century Gothic", 25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(9, 8, 9, 8);
             this.Name = "Form1";
@@ -366,6 +375,7 @@
         private System.Windows.Forms.ToolStripMenuItem downloadMenuEnhypen;
         private System.Windows.Forms.ToolStripMenuItem downloadMenuLoona;
         private System.Windows.Forms.ToolStripMenuItem downloadMenuNCTU;
+        private System.Windows.Forms.ToolStripMenuItem openOpeningFormToolStripMenuItem;
     }
 }
 
