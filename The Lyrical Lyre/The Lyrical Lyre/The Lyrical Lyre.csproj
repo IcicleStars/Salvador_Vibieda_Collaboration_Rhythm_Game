@@ -46,11 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="KeziahsMusicPlayer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="KeziahsMusicPlayer.designer.cs">
+      <DependentUpon>KeziahsMusicPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="openingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="openingForm.Designer.cs">
+      <DependentUpon>openingForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
@@ -60,8 +66,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="KeziahsMusicPlayer.resx">
+      <DependentUpon>KeziahsMusicPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="openingForm.resx">
+      <DependentUpon>openingForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
@@ -87,6 +96,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="songs\Bensound - Ukulele.wav" />
+    <Content Include="songs\BTS - Dynamite.wav" />
+    <Content Include="songs\Enhypen - 10 Months.wav" />
+    <Content Include="songs\Enhypen - Let Me In.wav" />
+    <Content Include="songs\Loona - 1200.wav" />
+    <Content Include="songs\NCT U - Neo Got My Back.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
