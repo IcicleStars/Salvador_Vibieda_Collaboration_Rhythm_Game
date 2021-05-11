@@ -103,6 +103,7 @@ namespace The_Lyrical_Lyre
             this.btnEasy.TabIndex = 5;
             this.btnEasy.Text = "Easy";
             this.btnEasy.UseVisualStyleBackColor = true;
+            this.btnEasy.Click += new System.EventHandler(this.btnEasy_Click);
             // 
             // btnMedium
             // 
