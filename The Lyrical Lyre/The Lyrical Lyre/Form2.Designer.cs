@@ -145,6 +145,7 @@ namespace The_Lyrical_Lyre
             // timerDetectBool
             // 
             this.timerDetectBool.Interval = 5;
+            this.timerDetectBool.Tick += new System.EventHandler(this.timerDetectBool_Tick);
             // 
             // timerAnimateDifficulty
             // 
