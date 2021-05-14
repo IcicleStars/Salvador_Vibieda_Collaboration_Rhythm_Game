@@ -97,13 +97,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="songs\Bensound - Ukulele.wav" />
-    <Content Include="songs\BTS - Dynamite.wav" />
-    <Content Include="songs\Enhypen - 10 Months.wav" />
-    <Content Include="songs\Enhypen - Let Me In.wav" />
-    <Content Include="songs\Loona - 1200.wav" />
-    <Content Include="songs\NCT U - Neo Got My Back.wav" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

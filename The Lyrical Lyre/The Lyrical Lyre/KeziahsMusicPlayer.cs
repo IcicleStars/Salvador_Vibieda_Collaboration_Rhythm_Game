@@ -16,17 +16,22 @@ namespace Music_Player
     {
         // Create Instance
         SoundPlayer myPlayer = new SoundPlayer();
+        SoundPlayer testPlayer = new SoundPlayer();
         List<String> songs = new List<String>();
         List<String> songFilePaths = new List<String>();
 
         // Set prefixes and extensions for FilePaths
         string wavExtension = ".wav";
         //string filePathPrefix = "F:\\Coding Projects\\Music Player\\0-Original\\Music Player\\bin\\Debug\\songs\\";
-        string filePathPrefix = "songs\\";
+        //string filePathPrefix = "songs\\";
 
         public Form1()
         {
             InitializeComponent();
+            var uniqueFilePathPrefix = @"C:\Users\student\Documents\GitHub\Graphics\Salvador_Rhythm_Game\The Lyrical Lyre\The Lyrical Lyre\songs\";
+            var filePathPrefix = System.IO.Directory.GetFiles(path: uniqueFilePathPrefix);
+            testPlayer = new SoundPlayer("C:\\Users\\student\\Documents\\GitHub\\Graphics\\Salvador_Rhythm_Game\\The Lyrical Lyre\\The Lyrical Lyre\\songs\\Bensound - Ukulele.wav");
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -108,10 +113,10 @@ namespace Music_Player
         private void playSong()
         {
             // Set Song
-             myPlayer.SoundLocation = txtSongFilePath.Text;
+             //myPlayer.SoundLocation = txtSongFilePath.Text;
 
              // Play
-             //myPlayer.Play();
+             testPlayer.Play();
         }
 
      
@@ -129,7 +134,7 @@ namespace Music_Player
             txtSongFilePath.Text = songFilePaths[nextSongIndex];
             listboxSongNames.SelectedIndex = nextSongIndex;
 
-            //playSong();
+            playSong();
         }
 
         private void stopSong()
@@ -275,14 +280,6 @@ namespace Music_Player
             {
                 nextSong();
             }
-        }
-
-        // Create form variable
-        The_Lyrical_Lyre.FormMain open;
-        private void openOpeningFormToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            open = new The_Lyrical_Lyre.FormMain();
-            open.Show();
         }
     }
 }

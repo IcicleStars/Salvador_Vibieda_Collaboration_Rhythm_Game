@@ -307,7 +307,7 @@
             this.openOpeningFormToolStripMenuItem.Name = "openOpeningFormToolStripMenuItem";
             this.openOpeningFormToolStripMenuItem.Size = new System.Drawing.Size(239, 24);
             this.openOpeningFormToolStripMenuItem.Text = "Open Opening Form";
-            this.openOpeningFormToolStripMenuItem.Click += new System.EventHandler(this.openOpeningFormToolStripMenuItem_Click);
+            //this.openOpeningFormToolStripMenuItem.Click += new System.EventHandler(this.openOpeningFormToolStripMenuItem_Click);
             // 
             // Form1
             // 
