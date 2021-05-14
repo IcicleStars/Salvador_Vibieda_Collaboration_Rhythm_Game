@@ -23,7 +23,7 @@ namespace Music_Player
         // Set prefixes and extensions for FilePaths
         string wavExtension = ".wav";
         //string filePathPrefix = "F:\\Coding Projects\\Music Player\\0-Original\\Music Player\\bin\\Debug\\songs\\";
-        //string filePathPrefix = "songs\\";
+        string filePathPrefix = "songs\\";
 
         public Form1()
         {

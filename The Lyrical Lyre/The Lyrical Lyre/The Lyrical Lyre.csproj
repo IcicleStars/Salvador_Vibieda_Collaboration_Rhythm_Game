@@ -72,6 +72,12 @@
     <Compile Include="Song1Game.Designer.cs">
       <DependentUpon>Song1Game.cs</DependentUpon>
     </Compile>
+    <Compile Include="Test Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test Form.Designer.cs">
+      <DependentUpon>Test Form.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="KeziahsMusicPlayer.resx">
       <DependentUpon>KeziahsMusicPlayer.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,9 +95,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Song1Game.resx">
       <DependentUpon>Song1Game.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test Form.resx">
+      <DependentUpon>Test Form.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -105,6 +115,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\120_A_CrunchDrums_840.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
