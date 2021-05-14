@@ -13,7 +13,6 @@ namespace The_Lyrical_Lyre
 {
     public partial class Test_Form : Form
     {
-        SoundPlayer myPlayer = new SoundPlayer();
 
         public Test_Form()
         {
@@ -22,12 +21,7 @@ namespace The_Lyrical_Lyre
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /*// Set Song
-            //myPlayer.SoundLocation = Properties.Resources.randomAudio;
-
-            // Play
-            myPlayer.Play(Properties.Resources.randomAudio);*/
-
+            
             SoundPlayer sndplayr = new
 
             SoundPlayer(Properties.Resources.randomAudio);

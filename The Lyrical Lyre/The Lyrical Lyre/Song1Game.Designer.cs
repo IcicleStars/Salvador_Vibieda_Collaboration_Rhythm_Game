@@ -163,6 +163,7 @@ namespace The_Lyrical_Lyre
             this.Controls.Add(this.picABox);
             this.Name = "Song1Game";
             this.Text = "Song1Game";
+            this.Load += new System.EventHandler(this.Song1Game_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picABox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picWBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSBox)).EndInit();

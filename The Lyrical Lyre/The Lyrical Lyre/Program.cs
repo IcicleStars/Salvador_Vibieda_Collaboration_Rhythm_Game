@@ -16,9 +16,9 @@ namespace The_Lyrical_Lyre
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new FormMain());
+            Application.Run(new FormMain());
             //Application.Run(new Music_Player.Form1());
-            Application.Run(new Test_Form());
+            //Application.Run(new Test_Form());
         }
     }
 }
