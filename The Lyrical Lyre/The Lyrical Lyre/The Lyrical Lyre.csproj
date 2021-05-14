@@ -95,7 +95,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Song1Game.resx">
       <DependentUpon>Song1Game.cs</DependentUpon>
@@ -116,8 +115,33 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
+  <ItemGroup>
+    <None Include="images\letter_a_PNG22.png" />
+    <None Include="images\letter_s.png" />
+    <None Include="images\letter_d.png" />
+    <None Include="images\letter_w.png" />
+    <None Include="images\letter_j.png" />
+    <None Include="images\letter_I.png" />
+    <None Include="images\Letter_K.png" />
+    <None Include="images\letter_L.png" />
+    <Content Include="songs\Bensound - Ukulele.wav" />
+    <Content Include="songs\BTS - Dynamite.wav" />
+    <Content Include="songs\Enhypen - 10 Months.wav" />
+    <Content Include="songs\Enhypen - Let Me In.wav" />
+    <Content Include="songs\Loona - 1200.wav" />
+    <Content Include="songs\NCT U - Neo Got My Back.wav" />
+  </ItemGroup>
+>>>>>>> Stashed changes
+=======
   <ItemGroup>
     <None Include="Resources\120_A_CrunchDrums_840.wav" />
   </ItemGroup>
+>>>>>>> 37c0205606b5e4c008502cf411a706c02bbae3b8
+>>>>>>> parent of 718d8bf (Revert "Starting Actual Game")
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
