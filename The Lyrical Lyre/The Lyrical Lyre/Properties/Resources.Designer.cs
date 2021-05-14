@@ -61,6 +61,7 @@ namespace The_Lyrical_Lyre.Properties {
         }
         
         /// <summary>
+<<<<<<< HEAD
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap letter_a_PNG22 {
@@ -137,6 +138,13 @@ namespace The_Lyrical_Lyre.Properties {
             get {
                 object obj = ResourceManager.GetObject("letter_w", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+=======
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream randomAudio {
+            get {
+                return ResourceManager.GetStream("randomAudio", resourceCulture);
+>>>>>>> 37c0205606b5e4c008502cf411a706c02bbae3b8
             }
         }
     }

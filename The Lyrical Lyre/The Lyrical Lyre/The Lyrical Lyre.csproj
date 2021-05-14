@@ -72,6 +72,12 @@
     <Compile Include="Song1Game.Designer.cs">
       <DependentUpon>Song1Game.cs</DependentUpon>
     </Compile>
+    <Compile Include="Test Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test Form.Designer.cs">
+      <DependentUpon>Test Form.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="KeziahsMusicPlayer.resx">
       <DependentUpon>KeziahsMusicPlayer.cs</DependentUpon>
     </EmbeddedResource>
@@ -94,6 +100,9 @@
     <EmbeddedResource Include="Song1Game.resx">
       <DependentUpon>Song1Game.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Test Form.resx">
+      <DependentUpon>Test Form.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -107,6 +116,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
   <ItemGroup>
@@ -126,5 +136,10 @@
     <Content Include="songs\NCT U - Neo Got My Back.wav" />
   </ItemGroup>
 >>>>>>> Stashed changes
+=======
+  <ItemGroup>
+    <None Include="Resources\120_A_CrunchDrums_840.wav" />
+  </ItemGroup>
+>>>>>>> 37c0205606b5e4c008502cf411a706c02bbae3b8
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
