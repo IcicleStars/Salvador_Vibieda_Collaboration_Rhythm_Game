@@ -66,5 +66,96 @@ namespace The_Lyrical_Lyre.Properties
                 resourceCulture = value;
             }
         }
+<<<<<<< HEAD
+=======
+        
+        /// <summary>
+<<<<<<< HEAD
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap letter_a_PNG22 {
+            get {
+                object obj = ResourceManager.GetObject("letter_a_PNG22", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap letter_d {
+            get {
+                object obj = ResourceManager.GetObject("letter_d", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap letter_I {
+            get {
+                object obj = ResourceManager.GetObject("letter_I", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap letter_j {
+            get {
+                object obj = ResourceManager.GetObject("letter_j", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Letter_K {
+            get {
+                object obj = ResourceManager.GetObject("Letter_K", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap letter_L {
+            get {
+                object obj = ResourceManager.GetObject("letter_L", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap letter_s {
+            get {
+                object obj = ResourceManager.GetObject("letter_s", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap letter_w {
+            get {
+                object obj = ResourceManager.GetObject("letter_w", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+=======
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream randomAudio {
+            get {
+                return ResourceManager.GetStream("randomAudio", resourceCulture);
+>>>>>>> 37c0205606b5e4c008502cf411a706c02bbae3b8
+            }
+        }
+>>>>>>> parent of 718d8bf (Revert "Starting Actual Game")
     }
 }
