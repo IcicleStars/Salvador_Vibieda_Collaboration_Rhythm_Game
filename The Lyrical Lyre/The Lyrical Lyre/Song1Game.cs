@@ -25,7 +25,7 @@ namespace The_Lyrical_Lyre
         {
             if(e.KeyCode == Keys.W)
             {
-                if (picWBox.Top == picBorder.Top - picWBox.Top || picWBox.Top == picBorder.Top - picWBox.Top + 1 || picWBox.Top == picBorder.Top - picWBox.Top + 2 || picWBox.Top == picBorder.Top - picWBox.Top + 3)
+                if (picWBox.Top > picBorder.Top - picWBox.Top && picWBox.Top < picBorder.Top - picWBox.Top + 5)
                 {
                     perfect();
                 }
@@ -34,6 +34,22 @@ namespace The_Lyrical_Lyre
                     great();
                 }
                 else if (picWBox.Top > picBorder.Bottom || picWBox.Top < picBorder.Top - picWBox.Top)
+                {
+                    failure();
+                }
+            }
+
+            if(e.KeyCode == Keys.A)
+            {
+                if (picABox.Top > picBorder.Top - picABox.Top - 5 && picABox.Top < picBorder.Top - picABox.Top + 5)
+                {
+                    perfect();
+                }
+                else if (picABox.Top > picBorder.Top - picABox.Top && picABox.Top < picBorder.Bottom)
+                {
+                    great();
+                }
+                else if (picABox.Top > picBorder.Bottom || picABox.Top < picBorder.Top - picABox.Top)
                 {
                     failure();
                 }
