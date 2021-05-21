@@ -14,7 +14,7 @@ namespace Lyrical_Lyre
     {
         // Create Public Variables
         List<PictureBox> tileButtons = new List<PictureBox>();
-        int speed;
+        int tempo;
 
         public keziahsAttempt()
         {
@@ -24,7 +24,9 @@ namespace Lyrical_Lyre
         private void keziahsAttempt_Load(object sender, EventArgs e)
         {
             // Assign Variables
-            speed = 10;
+            tempo = 240;
+            tempo = tempo * 100 / 60;
+            tileMover.Interval = tempo;
 
             // Set Road List
             tileButtons.Add(redClick);
@@ -41,7 +43,7 @@ namespace Lyrical_Lyre
             for (int i = 0; i < tileButtons.Count; i++)
             {
                 PictureBox eachClick = tileButtons[i];
-                eachClick.Top += speed;
+                eachClick.Top += eachClick.Height;
 
                 if (eachClick.Top >= this.ClientRectangle.Height)
                 {
