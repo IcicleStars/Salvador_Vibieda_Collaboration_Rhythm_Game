@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace The_Lyrical_Lyre
 {
@@ -95,6 +96,9 @@ namespace The_Lyrical_Lyre
             this.KeyPreview = true;
             tempoTimer.Start();
 
+            // Play Song
+            SoundPlayer sound = new SoundPlayer(Properties.Resources.Bensound___Ukulele);
+            sound.Play();
         }
 
         private void animationTimer_Tick(object sender, EventArgs e)

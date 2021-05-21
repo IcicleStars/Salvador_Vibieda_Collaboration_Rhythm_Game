@@ -26,6 +26,9 @@ namespace The_Lyrical_Lyre
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // Defaults
+            btnStart.Visible = true;
+
             // Set button to center of form
             btnStart.Left = (this.ClientRectangle.Width / 2) - (btnStart.Width / 2);
             btnStart.Top = (this.ClientRectangle.Height - (this.ClientRectangle.Height / 4)) - (btnStart.Height / 2);
@@ -41,6 +44,11 @@ namespace The_Lyrical_Lyre
             // Open new Form for level selection
             open = new FormSelect();
             open.Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
