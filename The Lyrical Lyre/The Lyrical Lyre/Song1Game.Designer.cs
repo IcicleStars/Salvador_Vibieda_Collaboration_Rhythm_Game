@@ -41,6 +41,15 @@ namespace The_Lyrical_Lyre
             this.picBorder = new System.Windows.Forms.PictureBox();
             this.animationTimer = new System.Windows.Forms.Timer(this.components);
             this.tempoTimer = new System.Windows.Forms.Timer(this.components);
+            this.lbW = new System.Windows.Forms.Label();
+            this.lbA = new System.Windows.Forms.Label();
+            this.lbS = new System.Windows.Forms.Label();
+            this.lbD = new System.Windows.Forms.Label();
+            this.lbI = new System.Windows.Forms.Label();
+            this.lbJ = new System.Windows.Forms.Label();
+            this.lbK = new System.Windows.Forms.Label();
+            this.lbL = new System.Windows.Forms.Label();
+            this.lbScore = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picABox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picWBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSBox)).BeginInit();
@@ -61,6 +70,7 @@ namespace The_Lyrical_Lyre
             this.picABox.Size = new System.Drawing.Size(78, 72);
             this.picABox.TabIndex = 0;
             this.picABox.TabStop = false;
+            this.picABox.Visible = false;
             // 
             // picWBox
             // 
@@ -154,11 +164,125 @@ namespace The_Lyrical_Lyre
             this.tempoTimer.Interval = 3000;
             this.tempoTimer.Tick += new System.EventHandler(this.tempoTimer_Tick);
             // 
+            // lbW
+            // 
+            this.lbW.AutoSize = true;
+            this.lbW.BackColor = System.Drawing.Color.Black;
+            this.lbW.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbW.ForeColor = System.Drawing.Color.White;
+            this.lbW.Location = new System.Drawing.Point(36, 388);
+            this.lbW.Name = "lbW";
+            this.lbW.Size = new System.Drawing.Size(25, 21);
+            this.lbW.TabIndex = 9;
+            this.lbW.Text = "W";
+            // 
+            // lbA
+            // 
+            this.lbA.AutoSize = true;
+            this.lbA.BackColor = System.Drawing.Color.Black;
+            this.lbA.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbA.ForeColor = System.Drawing.Color.White;
+            this.lbA.Location = new System.Drawing.Point(134, 388);
+            this.lbA.Name = "lbA";
+            this.lbA.Size = new System.Drawing.Size(21, 21);
+            this.lbA.TabIndex = 10;
+            this.lbA.Text = "A";
+            // 
+            // lbS
+            // 
+            this.lbS.AutoSize = true;
+            this.lbS.BackColor = System.Drawing.Color.Black;
+            this.lbS.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbS.ForeColor = System.Drawing.Color.White;
+            this.lbS.Location = new System.Drawing.Point(239, 388);
+            this.lbS.Name = "lbS";
+            this.lbS.Size = new System.Drawing.Size(20, 21);
+            this.lbS.TabIndex = 11;
+            this.lbS.Text = "S";
+            // 
+            // lbD
+            // 
+            this.lbD.AutoSize = true;
+            this.lbD.BackColor = System.Drawing.Color.Black;
+            this.lbD.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbD.ForeColor = System.Drawing.Color.White;
+            this.lbD.Location = new System.Drawing.Point(348, 388);
+            this.lbD.Name = "lbD";
+            this.lbD.Size = new System.Drawing.Size(21, 21);
+            this.lbD.TabIndex = 12;
+            this.lbD.Text = "D";
+            // 
+            // lbI
+            // 
+            this.lbI.AutoSize = true;
+            this.lbI.BackColor = System.Drawing.Color.Black;
+            this.lbI.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbI.ForeColor = System.Drawing.Color.White;
+            this.lbI.Location = new System.Drawing.Point(453, 388);
+            this.lbI.Name = "lbI";
+            this.lbI.Size = new System.Drawing.Size(15, 21);
+            this.lbI.TabIndex = 13;
+            this.lbI.Text = "I";
+            // 
+            // lbJ
+            // 
+            this.lbJ.AutoSize = true;
+            this.lbJ.BackColor = System.Drawing.Color.Black;
+            this.lbJ.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbJ.ForeColor = System.Drawing.Color.White;
+            this.lbJ.Location = new System.Drawing.Point(558, 388);
+            this.lbJ.Name = "lbJ";
+            this.lbJ.Size = new System.Drawing.Size(21, 21);
+            this.lbJ.TabIndex = 14;
+            this.lbJ.Text = "J";
+            // 
+            // lbK
+            // 
+            this.lbK.AutoSize = true;
+            this.lbK.BackColor = System.Drawing.Color.Black;
+            this.lbK.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbK.ForeColor = System.Drawing.Color.White;
+            this.lbK.Location = new System.Drawing.Point(669, 388);
+            this.lbK.Name = "lbK";
+            this.lbK.Size = new System.Drawing.Size(21, 21);
+            this.lbK.TabIndex = 15;
+            this.lbK.Text = "K";
+            // 
+            // lbL
+            // 
+            this.lbL.AutoSize = true;
+            this.lbL.BackColor = System.Drawing.Color.Black;
+            this.lbL.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbL.ForeColor = System.Drawing.Color.White;
+            this.lbL.Location = new System.Drawing.Point(782, 388);
+            this.lbL.Name = "lbL";
+            this.lbL.Size = new System.Drawing.Size(20, 21);
+            this.lbL.TabIndex = 16;
+            this.lbL.Text = "L";
+            // 
+            // lbScore
+            // 
+            this.lbScore.AutoSize = true;
+            this.lbScore.Location = new System.Drawing.Point(783, 428);
+            this.lbScore.Name = "lbScore";
+            this.lbScore.Size = new System.Drawing.Size(35, 13);
+            this.lbScore.TabIndex = 17;
+            this.lbScore.Text = "label1";
+            // 
             // Song1Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(836, 450);
+            this.Controls.Add(this.lbScore);
+            this.Controls.Add(this.lbL);
+            this.Controls.Add(this.lbK);
+            this.Controls.Add(this.lbJ);
+            this.Controls.Add(this.lbI);
+            this.Controls.Add(this.lbD);
+            this.Controls.Add(this.lbS);
+            this.Controls.Add(this.lbA);
+            this.Controls.Add(this.lbW);
             this.Controls.Add(this.picBorder);
             this.Controls.Add(this.picLBox);
             this.Controls.Add(this.picKBox);
@@ -182,6 +306,7 @@ namespace The_Lyrical_Lyre
             ((System.ComponentModel.ISupportInitialize)(this.picLBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBorder)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -198,5 +323,14 @@ namespace The_Lyrical_Lyre
         private System.Windows.Forms.PictureBox picBorder;
         private System.Windows.Forms.Timer animationTimer;
         private System.Windows.Forms.Timer tempoTimer;
+        private System.Windows.Forms.Label lbW;
+        private System.Windows.Forms.Label lbA;
+        private System.Windows.Forms.Label lbS;
+        private System.Windows.Forms.Label lbD;
+        private System.Windows.Forms.Label lbI;
+        private System.Windows.Forms.Label lbJ;
+        private System.Windows.Forms.Label lbK;
+        private System.Windows.Forms.Label lbL;
+        private System.Windows.Forms.Label lbScore;
     }
 }
