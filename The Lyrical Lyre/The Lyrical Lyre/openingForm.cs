@@ -30,24 +30,26 @@ namespace The_Lyrical_Lyre
             btnStart.Visible = true;
 
             // Set button to center of form
-            btnStart.Left = (this.ClientRectangle.Width / 2) - (btnStart.Width / 2);
-            btnStart.Top = (this.ClientRectangle.Height - (this.ClientRectangle.Height / 4)) - (btnStart.Height / 2);
+           
 
             // Play Music
             
-            SoundPlayer sound = new SoundPlayer(Properties.Resources.Bensound___Ukulele);
+            SoundPlayer sound = new SoundPlayer(Properties.Resources.openingSong);
             sound.Play();
         }
 
-        private void btnStart_Click(object sender, EventArgs e)
+        
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnStart_Click_1(object sender, EventArgs e)
         {
             // Open new Form for level selection
             open = new FormSelect();
             open.Show();
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
 
         }
     }

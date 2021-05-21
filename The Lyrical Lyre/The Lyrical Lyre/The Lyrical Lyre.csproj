@@ -111,6 +111,8 @@
     <None Include="Resources\Title.png" />
     <None Include="Resources\Genshin-Impact-Venti.png" />
     <None Include="Resources\background.png" />
+    <None Include="Resources\start.png" />
+    <None Include="Resources\openingSong.wav" />
     <Content Include="songs\Bensound - Ukulele.wav" />
     <Content Include="songs\BTS - Dynamite.wav" />
     <Content Include="songs\Enhypen - 10 Months.wav" />
