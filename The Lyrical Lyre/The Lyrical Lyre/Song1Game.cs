@@ -19,10 +19,16 @@ namespace The_Lyrical_Lyre
         List<PictureBox> notes = new List<PictureBox>();
         List<Label> keyNotes = new List<Label>();
         PictureBox selectedNote, randomNote;
-        int tempo = 5, max;
+        int tempo = 5, max, score;
+        
 
         private void Song1Game_KeyDown(object sender, KeyEventArgs e)
         {
+            if(e.KeyCode == Keys.Enter)
+            {
+                lbStart.Visible = false;
+                tempoTimer.Start();
+            }
             if(e.KeyCode == Keys.W)
             {
                 if (picWBox.Top >= (picBorder.Top - picWBox.Top) - 5 && picWBox.Top <= (picBorder.Top - picWBox.Top) + 5)
@@ -199,10 +205,10 @@ namespace The_Lyrical_Lyre
 
 
             // Set Defaults
+            score = 0;
             setDefaults();
 
             this.KeyPreview = true;
-            tempoTimer.Start();
 
         }
 
@@ -246,6 +252,7 @@ namespace The_Lyrical_Lyre
             {
                 keyNotes[i].BackColor = Color.Black;
             }
+            lbScore.Text = "Score: " + score;
 
 
         }
@@ -267,6 +274,8 @@ namespace The_Lyrical_Lyre
             {
                 keyNotes[i].BackColor = Color.Blue;
             }
+            score += 100;
+            lbScore.Text = "Score: " + score;
         }
 
         // Great!
@@ -279,6 +288,8 @@ namespace The_Lyrical_Lyre
             {
                 keyNotes[i].BackColor = Color.Yellow;
             }
+            score += 25;
+            lbScore.Text = "Score: " + score;
         }
 
         // Failure
@@ -291,6 +302,8 @@ namespace The_Lyrical_Lyre
             {
                 keyNotes[i].BackColor = Color.Red;
             }
+            score -= 10;
+            lbScore.Text = "Score: " + score;
         }
     }
 }

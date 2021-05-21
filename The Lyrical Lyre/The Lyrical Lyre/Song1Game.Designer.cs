@@ -50,6 +50,7 @@ namespace The_Lyrical_Lyre
             this.lbK = new System.Windows.Forms.Label();
             this.lbL = new System.Windows.Forms.Label();
             this.lbScore = new System.Windows.Forms.Label();
+            this.lbStart = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picABox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picWBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSBox)).BeginInit();
@@ -263,17 +264,30 @@ namespace The_Lyrical_Lyre
             // lbScore
             // 
             this.lbScore.AutoSize = true;
-            this.lbScore.Location = new System.Drawing.Point(783, 428);
+            this.lbScore.BackColor = System.Drawing.Color.Transparent;
+            this.lbScore.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbScore.Location = new System.Drawing.Point(9, 9);
             this.lbScore.Name = "lbScore";
-            this.lbScore.Size = new System.Drawing.Size(35, 13);
+            this.lbScore.Size = new System.Drawing.Size(41, 19);
             this.lbScore.TabIndex = 17;
             this.lbScore.Text = "label1";
+            // 
+            // lbStart
+            // 
+            this.lbStart.AutoSize = true;
+            this.lbStart.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbStart.Location = new System.Drawing.Point(289, 222);
+            this.lbStart.Name = "lbStart";
+            this.lbStart.Size = new System.Drawing.Size(230, 33);
+            this.lbStart.TabIndex = 18;
+            this.lbStart.Text = "Press \"Enter\" to Start";
             // 
             // Song1Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(836, 450);
+            this.Controls.Add(this.lbStart);
             this.Controls.Add(this.lbScore);
             this.Controls.Add(this.lbL);
             this.Controls.Add(this.lbK);
@@ -332,5 +346,6 @@ namespace The_Lyrical_Lyre
         private System.Windows.Forms.Label lbK;
         private System.Windows.Forms.Label lbL;
         private System.Windows.Forms.Label lbScore;
+        private System.Windows.Forms.Label lbStart;
     }
 }
