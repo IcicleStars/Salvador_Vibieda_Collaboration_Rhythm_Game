@@ -21,9 +21,6 @@ namespace The_Lyrical_Lyre
         bool song1 = false, song2 = false, song3 = false, song4 = false, difficultyIn, selected = false;
         int tick = 0, tick2 = 0;
 
-        // Global Variables to OPEN game
-        Song1Game open;
-
         private void btnSong1_Click(object sender, EventArgs e)
         {
             song1 = true;
@@ -80,46 +77,14 @@ namespace The_Lyrical_Lyre
                     tick = 0;
                 }
             }
-
-        }
-
-        private void timerDetectBool_Tick(object sender, EventArgs e)
-        {
-            if (song1)
-            {
-                btnSong1.Click -= btnSong1_Click;
-            }
-            else if (song2)
-            {
-                btnSong2.Click -= btnSong2_Click;
-            }
-            else if (song3)
-            {
-                btnSong3.Click -= btnSong3_Click;
-            }
-            else if (song4)
-            {
-                btnSong4.Click -= btnSong4_Click;
-            }
-        }
-
-        private void btnEasy_Click(object sender, EventArgs e)
-        {
-            if (song1)
-            {
-                open = new Song1Game();
-                open.Show();
             
-            }
-
         }
 
         SoundPlayer Music; // Plays selected song
 
-        // REAL TIMER NAME: TimerAnimateSong (animates songs)
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (selected == false) // Animates Song CHoices when one is selected
+            if (selected == false)
             {
                 tick2 += 1;
                 lbSong.Left += 6;
@@ -142,7 +107,7 @@ namespace The_Lyrical_Lyre
                     btnSong1.Left += 10;
                     btnSong4.Left += 10;
                 }
-                else if (song4)
+                else if (song4) 
                 {
                     btnSong2.Left += 10;
                     btnSong3.Left += 10;
@@ -155,13 +120,9 @@ namespace The_Lyrical_Lyre
                     timerAnimateSong.Stop();
                     tick2 = 0;
                     selected = true;
-                    btnSong1.Click += btnSong1_Click;
-                    btnSong2.Click += btnSong2_Click;
-                    btnSong3.Click += btnSong3_Click;
-                    btnSong4.Click += btnSong4_Click;
                 }
             }
-            else if (selected)  // Animates the song choices once one has already been selected
+            else if (selected)
             {
                 tick2 += 1;
 
@@ -233,18 +194,10 @@ namespace The_Lyrical_Lyre
                         btnSong3.Left += 10;
                     }
                 }
-
-                // Stop and Reset Timer
                 if (tick2 == 20)
                 {
                     timerAnimateSong.Stop();
                     tick2 = 0;
-
-                    // Reenables the clicking of buttons
-                    btnSong1.Click += btnSong1_Click;
-                    btnSong2.Click += btnSong2_Click;
-                    btnSong3.Click += btnSong3_Click;
-                    btnSong4.Click += btnSong4_Click;
                 }
 
             }
@@ -269,8 +222,6 @@ namespace The_Lyrical_Lyre
         }
 
         // METHODS BELOW HERE
-
-        // Method animates the difficulty title and buttons.
         private void animateDifficultyIn()
         {
             lbDifficulty.Visible = true;
@@ -281,13 +232,8 @@ namespace The_Lyrical_Lyre
             timerAnimateDifficulty.Start();
         }
 
-        // Method animates the song choice buttons
         private void animateSongsOut()
         {
-            btnSong1.Click -= btnSong1_Click;
-            btnSong2.Click -= btnSong2_Click;
-            btnSong3.Click -= btnSong3_Click;
-            btnSong4.Click -= btnSong4_Click;
             timerAnimateSong.Start();
         }
     }

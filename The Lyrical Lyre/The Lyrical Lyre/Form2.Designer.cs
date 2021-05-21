@@ -103,7 +103,6 @@ namespace The_Lyrical_Lyre
             this.btnEasy.TabIndex = 5;
             this.btnEasy.Text = "Easy";
             this.btnEasy.UseVisualStyleBackColor = true;
-            this.btnEasy.Click += new System.EventHandler(this.btnEasy_Click);
             // 
             // btnMedium
             // 
@@ -146,7 +145,6 @@ namespace The_Lyrical_Lyre
             // timerDetectBool
             // 
             this.timerDetectBool.Interval = 5;
-            this.timerDetectBool.Tick += new System.EventHandler(this.timerDetectBool_Tick);
             // 
             // timerAnimateDifficulty
             // 
