@@ -52,7 +52,9 @@
     <Compile Include="KeziahsMusicPlayer.designer.cs">
       <DependentUpon>KeziahsMusicPlayer.cs</DependentUpon>
     </Compile>
-    <Compile Include="openingForm.cs" />
+    <Compile Include="openingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="openingForm.Designer.cs">
       <DependentUpon>openingForm.cs</DependentUpon>
     </Compile>
