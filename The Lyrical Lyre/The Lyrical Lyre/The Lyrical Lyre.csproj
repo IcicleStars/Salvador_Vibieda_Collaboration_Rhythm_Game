@@ -52,7 +52,13 @@
     <Compile Include="KeziahsMusicPlayer.designer.cs">
       <DependentUpon>KeziahsMusicPlayer.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="openingForm.cs" />
+=======
+    <Compile Include="openingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+>>>>>>> Ice's-Branch
     <Compile Include="openingForm.Designer.cs">
       <DependentUpon>openingForm.cs</DependentUpon>
     </Compile>
@@ -62,8 +68,20 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+=======
+    <Compile Include="Keziah%27s attempt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Keziah%27s attempt.Designer.cs">
+      <DependentUpon>Keziah%27s attempt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<<< HEAD:The Lyrical Lyre/The Lyrical Lyre/The Lyrical Lyre.csproj
+>>>>>>> Ice's-Branch
     <Compile Include="Song1Game.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +96,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+<<<<<<< HEAD
+=======
+========
+    <EmbeddedResource Include="Keziah%27s attempt.resx">
+      <DependentUpon>Keziah%27s attempt.cs</DependentUpon>
+>>>>>>>> Ice's-Branch:Lyrical Lyre/Lyrical Lyre/Lyrical Lyre.csproj
+>>>>>>> Ice's-Branch
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -87,6 +112,10 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+<<<<<<< HEAD
+=======
+      <DesignTime>True</DesignTime>
+>>>>>>> Ice's-Branch
     </Compile>
     <EmbeddedResource Include="Song1Game.resx">
       <DependentUpon>Song1Game.cs</DependentUpon>
@@ -105,12 +134,25 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:The Lyrical Lyre/The Lyrical Lyre/The Lyrical Lyre.csproj
+>>>>>>> Ice's-Branch
     <Content Include="songs\Bensound - Ukulele.wav" />
     <Content Include="songs\BTS - Dynamite.wav" />
     <Content Include="songs\Enhypen - 10 Months.wav" />
     <Content Include="songs\Enhypen - Let Me In.wav" />
     <Content Include="songs\Loona - 1200.wav" />
     <Content Include="songs\NCT U - Neo Got My Back.wav" />
+<<<<<<< HEAD
+=======
+========
+    <None Include="Resources\blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red.png" />
+>>>>>>>> Ice's-Branch:Lyrical Lyre/Lyrical Lyre/Lyrical Lyre.csproj
+>>>>>>> Ice's-Branch
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
