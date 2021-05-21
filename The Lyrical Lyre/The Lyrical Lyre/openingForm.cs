@@ -31,7 +31,9 @@ namespace The_Lyrical_Lyre
             btnStart.Top = (this.ClientRectangle.Height - (this.ClientRectangle.Height / 4)) - (btnStart.Height / 2);
 
             // Play Music
-
+            
+            SoundPlayer sound = new SoundPlayer(Properties.Resources.Bensound___Ukulele);
+            sound.Play();
         }
 
         private void btnStart_Click(object sender, EventArgs e)
