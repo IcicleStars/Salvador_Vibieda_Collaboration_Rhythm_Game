@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace The_Lyrical_Lyre
 {
@@ -202,13 +203,20 @@ namespace The_Lyrical_Lyre
             keyNotes.Add(lbK);
             keyNotes.Add(lbL);
 
-
-
             // Set Defaults
             score = 0;
             setDefaults();
 
             this.KeyPreview = true;
+
+            // Play Music
+            // Play Music
+            SoundPlayer sound = new SoundPlayer(Properties.Resources.guizhongsLullaby);
+            sound.Play();
+            // dawn winery
+            // adeptus retirement
+            // the wind and the star traveler
+
 
         }
 

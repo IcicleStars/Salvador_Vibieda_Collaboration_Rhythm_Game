@@ -17,7 +17,6 @@ namespace The_Lyrical_Lyre
 
         // Global Variables
         FormSelect open; // Creates variable to for form
-        SoundPlayer opening; // Opening music for title screen
 
         public FormMain()
         {
@@ -27,7 +26,7 @@ namespace The_Lyrical_Lyre
         private void Form1_Load(object sender, EventArgs e)
         {
             // Play Music
-            SoundPlayer sound = new SoundPlayer(Properties.Resources.openingSong);
+            SoundPlayer sound = new SoundPlayer(Properties.Resources.theWindAndTheStarTraveler);
             sound.Play();
 
         }

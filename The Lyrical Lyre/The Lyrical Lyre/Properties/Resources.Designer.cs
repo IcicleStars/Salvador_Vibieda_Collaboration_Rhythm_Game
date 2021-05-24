@@ -61,6 +61,15 @@ namespace The_Lyrical_Lyre.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream adeptusRetirement {
+            get {
+                return ResourceManager.GetStream("adeptusRetirement", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap background {
@@ -71,12 +80,30 @@ namespace The_Lyrical_Lyre.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream dawnWinery {
+            get {
+                return ResourceManager.GetStream("dawnWinery", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Genshin_Impact_Venti {
             get {
                 object obj = ResourceManager.GetObject("Genshin_Impact_Venti", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream guizhongsLullaby {
+            get {
+                return ResourceManager.GetStream("guizhongsLullaby", resourceCulture);
             }
         }
         
@@ -96,6 +123,15 @@ namespace The_Lyrical_Lyre.Properties {
             get {
                 object obj = ResourceManager.GetObject("start", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream theWindAndTheStarTraveler {
+            get {
+                return ResourceManager.GetStream("theWindAndTheStarTraveler", resourceCulture);
             }
         }
         
