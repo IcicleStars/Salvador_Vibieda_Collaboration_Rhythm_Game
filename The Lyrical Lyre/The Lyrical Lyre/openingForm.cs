@@ -26,11 +26,9 @@ namespace The_Lyrical_Lyre
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // Set button to center of form
-            btnStart.Left = (this.ClientRectangle.Width / 2) - (btnStart.Width / 2);
-            btnStart.Top = (this.ClientRectangle.Height - (this.ClientRectangle.Height / 4)) - (btnStart.Height / 2);
-
             // Play Music
+            SoundPlayer sound = new SoundPlayer(Properties.Resources.openingSong);
+            sound.Play();
 
         }
 
