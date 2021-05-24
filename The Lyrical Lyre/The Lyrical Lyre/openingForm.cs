@@ -32,7 +32,7 @@ namespace The_Lyrical_Lyre
 
         }
 
-        private void btnStart_Click(object sender, EventArgs e)
+        private void startBtn_Click(object sender, EventArgs e)
         {
             // Open new Form for level selection
             open = new FormSelect();
