@@ -102,21 +102,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Title.png" />
-    <None Include="Resources\Genshin-Impact-Venti.png" />
-    <None Include="Resources\background.png" />
-    <None Include="Resources\start.png" />
-    <None Include="Resources\openingSong.wav" />
-    <None Include="Resources\theWindAndTheStarTraveler.wav" />
-    <None Include="Resources\dawnWinery.wav" />
-    <None Include="Resources\guizhongsLullaby.wav" />
-    <None Include="Resources\adeptusRetirement.wav" />
     <Content Include="songs\Bensound - Ukulele.wav" />
     <Content Include="songs\BTS - Dynamite.wav" />
     <Content Include="songs\Enhypen - 10 Months.wav" />
     <Content Include="songs\Enhypen - Let Me In.wav" />
     <Content Include="songs\Loona - 1200.wav" />
     <Content Include="songs\NCT U - Neo Got My Back.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

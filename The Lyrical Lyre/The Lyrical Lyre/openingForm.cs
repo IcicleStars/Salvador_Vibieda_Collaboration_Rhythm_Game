@@ -17,6 +17,7 @@ namespace The_Lyrical_Lyre
 
         // Global Variables
         FormSelect open; // Creates variable to for form
+        SoundPlayer opening; // Opening music for title screen
 
         public FormMain()
         {
@@ -31,11 +32,14 @@ namespace The_Lyrical_Lyre
 
         }
 
-        private void startBtn_Click(object sender, EventArgs e)
+        
+
+        private void buttonStart_Click(object sender, EventArgs e)
         {
             // Open new Form for level selection
             open = new FormSelect();
             open.Show();
+
         }
     }
 }
