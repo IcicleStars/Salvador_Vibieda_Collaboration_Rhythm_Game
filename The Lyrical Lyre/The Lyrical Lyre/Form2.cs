@@ -20,9 +20,11 @@ namespace The_Lyrical_Lyre
         // Create Global Variables
         bool song1 = false, song2 = false, song3 = false, song4 = false, difficultyIn, selected = false;
         int tick = 0, tick2 = 0;
+        public bool easy, medium, hard;
 
         // Global Variables to OPEN game
         Song1Game open;
+        Song2Game open2;
 
         private void btnSong1_Click(object sender, EventArgs e)
         {
@@ -103,15 +105,38 @@ namespace The_Lyrical_Lyre
             }
         }
 
+        private void btnHard_Click(object sender, EventArgs e)
+        {
+            easy = false;
+            medium = false;
+            hard = true;
+        }
+
         private void btnEasy_Click(object sender, EventArgs e)
         {
+            easy = true;
+            medium = false;
+            hard = false;
+
             if (song1)
             {
                 open = new Song1Game();
                 open.Show();
             
             }
+            if (song2)
+            {
+                open2 = new Song2Game();
+                open2.Show();
+            }
 
+        }
+
+        private void btnMedium_Click(object sender, EventArgs e)
+        {
+            easy = false;
+            medium = true;
+            hard = false;
         }
 
         SoundPlayer Music; // Plays selected song

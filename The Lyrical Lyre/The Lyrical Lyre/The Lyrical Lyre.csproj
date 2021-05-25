@@ -66,6 +66,12 @@
     <Compile Include="Song1Game.Designer.cs">
       <DependentUpon>Song1Game.cs</DependentUpon>
     </Compile>
+    <Compile Include="Song2Game.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Song2Game.Designer.cs">
+      <DependentUpon>Song2Game.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="KeziahsMusicPlayer.resx">
       <DependentUpon>KeziahsMusicPlayer.cs</DependentUpon>
     </EmbeddedResource>
@@ -87,6 +93,9 @@
     </Compile>
     <EmbeddedResource Include="Song1Game.resx">
       <DependentUpon>Song1Game.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Song2Game.resx">
+      <DependentUpon>Song2Game.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

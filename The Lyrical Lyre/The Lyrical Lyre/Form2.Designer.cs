@@ -113,6 +113,7 @@ namespace The_Lyrical_Lyre
             this.btnMedium.TabIndex = 6;
             this.btnMedium.Text = "Medium";
             this.btnMedium.UseVisualStyleBackColor = true;
+            this.btnMedium.Click += new System.EventHandler(this.btnMedium_Click);
             // 
             // btnHard
             // 
@@ -122,13 +123,14 @@ namespace The_Lyrical_Lyre
             this.btnHard.TabIndex = 7;
             this.btnHard.Text = "Hard";
             this.btnHard.UseVisualStyleBackColor = true;
+            this.btnHard.Click += new System.EventHandler(this.btnHard_Click);
             // 
             // lbSong
             // 
             this.lbSong.AutoSize = true;
             this.lbSong.Location = new System.Drawing.Point(440, 9);
             this.lbSong.Name = "lbSong";
-            this.lbSong.Size = new System.Drawing.Size(196, 82);
+            this.lbSong.Size = new System.Drawing.Size(242, 104);
             this.lbSong.TabIndex = 8;
             this.lbSong.Text = "Select Your\r\nSong";
             this.lbSong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -138,7 +140,7 @@ namespace The_Lyrical_Lyre
             this.lbDifficulty.AutoSize = true;
             this.lbDifficulty.Location = new System.Drawing.Point(14, 9);
             this.lbDifficulty.Name = "lbDifficulty";
-            this.lbDifficulty.Size = new System.Drawing.Size(156, 82);
+            this.lbDifficulty.Size = new System.Drawing.Size(194, 104);
             this.lbDifficulty.TabIndex = 9;
             this.lbDifficulty.Text = "Select\r\nDifficulty";
             this.lbDifficulty.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -160,7 +162,7 @@ namespace The_Lyrical_Lyre
             // 
             // FormSelect
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 41F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(23F, 52F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(823, 455);
             this.Controls.Add(this.lbDifficulty);

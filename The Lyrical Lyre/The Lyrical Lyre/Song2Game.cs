@@ -11,31 +11,112 @@ using System.Media;
 
 namespace The_Lyrical_Lyre
 {
-
-        public partial class Song1Game : Form
+    public partial class Song2Game : Form
     {
-        
+        public Song2Game()
+        {
+            InitializeComponent();
+        }
+
         // Create Global Variables
         Random generate = new Random();
         List<PictureBox> notes = new List<PictureBox>();
         List<Label> keyNotes = new List<Label>();
         PictureBox selectedNote, randomNote;
-        int tempo = 5, max, score, tick;
-        SoundPlayer sound = new SoundPlayer(Properties.Resources.guizhongsLullaby);
+        int tempo = 5, max, score, tick = 0;
+        bool continued = false;
+
+        SoundPlayer sound = new SoundPlayer(Properties.Resources.dawnWinery);
 
 
-        private void Song1Game_KeyDown(object sender, KeyEventArgs e)
+
+
+
+        private void Song2Game_Load(object sender, EventArgs e)
         {
-            if(e.KeyCode == Keys.Enter)
+            // Populate pictureBox list 
+            notes.Add(picWBox);
+            notes.Add(picABox);
+            notes.Add(picSBox);
+            notes.Add(picDBox);
+            notes.Add(picIBox);
+            notes.Add(picJBox);
+            notes.Add(picKBox);
+            notes.Add(picLBox);
+
+            // Populate Label List
+            keyNotes.Add(lbW);
+            keyNotes.Add(lbA);
+            keyNotes.Add(lbS);
+            keyNotes.Add(lbD);
+            keyNotes.Add(lbI);
+            keyNotes.Add(lbJ);
+            keyNotes.Add(lbK);
+            keyNotes.Add(lbL);
+
+            // Set Defaults
+            score = 0;
+            setDefaults();
+
+            this.KeyPreview = true;
+
+            // Play Music
+            // Play Music
+
+            // dawn winery
+            // adeptus retirement
+            // the wind and the star traveler
+        }
+
+
+
+        // METHODS BELOW HERE
+        // this method calls a note down
+        private void callNote(PictureBox Note)
+        {
+            selectedNote = Note;
+            selectedNote.Visible = true;
+            animationTimer.Start();
+        }
+
+        // Set Default
+        private void setDefaults()
+        {
+            max = notes.Count;
+            for (var index = 0; index < max; index++)
+            {
+                notes[index].Top = 0;
+                notes[index].Visible = false;
+
+            }
+            for (var i = 0; i < keyNotes.Count; i++)
+            {
+                keyNotes[i].BackColor = Color.Black;
+            }
+            lbScore.Text = "Score: " + score;
+
+
+        }
+
+        // Reset Picturebox
+        private void resetNote(PictureBox note)
+        {
+            note.Visible = false;
+            note.Top = 0;
+        }
+
+        private void Song2Game_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
             {
                 if (lbStart.Visible == true)
                 {
                     lbStart.Visible = false;
                     tempoTimer.Start();
                     sound.Play();
+                    continued = true;
                     timer.Start();
                 }
-
 
 
             }
@@ -48,6 +129,7 @@ namespace The_Lyrical_Lyre
 
 
             }
+
             if (e.KeyCode == Keys.W)
             {
                 if (picWBox.Top >= (picBorder.Top - picWBox.Top) - 5 && picWBox.Top <= (picBorder.Top - picWBox.Top) + 5)
@@ -56,7 +138,7 @@ namespace The_Lyrical_Lyre
                 }
                 else if (picWBox.Top > (picBorder.Top - picWBox.Top) + 5 && picWBox.Top < picBorder.Bottom)
                 {
-                    great();                
+                    great();
                 }
                 else if (picWBox.Top > picBorder.Bottom || picWBox.Top < picBorder.Top - picWBox.Top - 5)
                 {
@@ -64,7 +146,7 @@ namespace The_Lyrical_Lyre
                 }
             }
 
-            if(e.KeyCode == Keys.A)
+            if (e.KeyCode == Keys.A)
             {
                 if (picABox.Top >= (picBorder.Top - picABox.Top) - 5 && picABox.Top <= (picBorder.Top - picABox.Top) + 5)
                 {
@@ -79,7 +161,7 @@ namespace The_Lyrical_Lyre
                     failure();
                 }
             }
-            
+
             if (e.KeyCode == Keys.S)
             {
                 if (picSBox.Top >= (picBorder.Top - picSBox.Top) - 5 && picSBox.Top <= (picBorder.Top - picSBox.Top) + 5)
@@ -177,7 +259,20 @@ namespace The_Lyrical_Lyre
             }
         }
 
-        private void tempoTimer_Tick(object sender, EventArgs e)
+        private void animationTimer_Tick_1(object sender, EventArgs e)
+        {
+            selectedNote.Top += tempo;
+
+            if (selectedNote.Top >= picBorder.Top)
+            {
+                animationTimer.Stop();
+                resetNote(selectedNote);
+                setDefaults();
+                failure();
+            }
+        }
+
+        private void tempoTimer_Tick_1(object sender, EventArgs e)
         {
             // Create variables
             randomNote = notes[generate.Next(max)];
@@ -189,119 +284,18 @@ namespace The_Lyrical_Lyre
             }
         }
 
-        private void picWBox_Click(object sender, EventArgs e)
-        {
-            callNote(picWBox);
-        }
-
-        public Song1Game()
-        {
-            InitializeComponent();
-        }
-
-        private void Song1Game_Load(object sender, EventArgs e)
-        {
-            // Populate pictureBox list 
-            notes.Add(picWBox);
-            notes.Add(picABox);
-            notes.Add(picSBox);
-            notes.Add(picDBox);
-            notes.Add(picIBox);
-            notes.Add(picJBox);
-            notes.Add(picKBox);
-            notes.Add(picLBox);
-
-            // Populate Label List
-            keyNotes.Add(lbW);
-            keyNotes.Add(lbA);
-            keyNotes.Add(lbS);
-            keyNotes.Add(lbD);
-            keyNotes.Add(lbI);
-            keyNotes.Add(lbJ);
-            keyNotes.Add(lbK);
-            keyNotes.Add(lbL);
-
-            // Set Defaults
-            score = 0;
-            setDefaults();
-
-            this.KeyPreview = true;
-
-            // Play Music
-            // Play Music
-
-            // dawn winery
-            // adeptus retirement
-            // the wind and the star traveler
-
-
-        }
-
-        private void animationTimer_Tick(object sender, EventArgs e)
-        {
-            //tick++;
-
-            selectedNote.Top += tempo;
-
-            if (selectedNote.Top >= picBorder.Top)
-            {
-                animationTimer.Stop();
-                resetNote(selectedNote);
-                setDefaults();
-                failure();
-            }
-            
-
-        }
-
-        // METHODS BELOW HERE
-        // this method calls a note down
-        private void callNote(PictureBox Note)
-        {
-            selectedNote = Note;
-            selectedNote.Visible = true;
-            animationTimer.Start();
-        }
-
-        // Set Default
-        private void setDefaults()
-        { 
-            max = notes.Count;
-            for (var index = 0; index < max; index++)
-            {
-               notes[index].Top = 0;
-               notes[index].Visible = false;
-               
-            }
-            for (var i = 0; i < keyNotes.Count; i++)
-            {
-                keyNotes[i].BackColor = Color.Black;
-            }
-            lbScore.Text = "Score: " + score;
-
-
-        }
-
-        // Reset Picturebox
-        private void resetNote(PictureBox note)
-        {
-            note.Visible = false;
-            note.Top = 0;
-        }
-
         private void timer_Tick(object sender, EventArgs e)
         {
-            tick++; 
+            tick++;
 
-            if (tick == 30)
+            if (tick == 66)
             {
                 setDefaults();
                 lbStart.Visible = true;
                 timer.Stop();
                 animationTimer.Stop();
                 tempoTimer.Stop();
-                sound.Stop();
-                
+
             }
         }
 

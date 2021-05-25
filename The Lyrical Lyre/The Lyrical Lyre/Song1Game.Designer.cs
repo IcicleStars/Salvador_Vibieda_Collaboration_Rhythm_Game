@@ -51,6 +51,7 @@ namespace The_Lyrical_Lyre
             this.lbL = new System.Windows.Forms.Label();
             this.lbScore = new System.Windows.Forms.Label();
             this.lbStart = new System.Windows.Forms.Label();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picABox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picWBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSBox)).BeginInit();
@@ -66,9 +67,10 @@ namespace The_Lyrical_Lyre
             // 
             this.picABox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picABox.BackColor = System.Drawing.Color.Cyan;
-            this.picABox.Location = new System.Drawing.Point(113, 12);
+            this.picABox.Location = new System.Drawing.Point(151, 15);
+            this.picABox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picABox.Name = "picABox";
-            this.picABox.Size = new System.Drawing.Size(78, 72);
+            this.picABox.Size = new System.Drawing.Size(104, 89);
             this.picABox.TabIndex = 0;
             this.picABox.TabStop = false;
             this.picABox.Visible = false;
@@ -77,9 +79,10 @@ namespace The_Lyrical_Lyre
             // 
             this.picWBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picWBox.BackColor = System.Drawing.Color.GreenYellow;
-            this.picWBox.Location = new System.Drawing.Point(12, 12);
+            this.picWBox.Location = new System.Drawing.Point(16, 15);
+            this.picWBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picWBox.Name = "picWBox";
-            this.picWBox.Size = new System.Drawing.Size(78, 72);
+            this.picWBox.Size = new System.Drawing.Size(104, 89);
             this.picWBox.TabIndex = 1;
             this.picWBox.TabStop = false;
             this.picWBox.Click += new System.EventHandler(this.picWBox_Click);
@@ -88,9 +91,10 @@ namespace The_Lyrical_Lyre
             // 
             this.picSBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picSBox.BackColor = System.Drawing.Color.DarkTurquoise;
-            this.picSBox.Location = new System.Drawing.Point(217, 12);
+            this.picSBox.Location = new System.Drawing.Point(289, 15);
+            this.picSBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picSBox.Name = "picSBox";
-            this.picSBox.Size = new System.Drawing.Size(78, 72);
+            this.picSBox.Size = new System.Drawing.Size(104, 89);
             this.picSBox.TabIndex = 2;
             this.picSBox.TabStop = false;
             // 
@@ -98,9 +102,10 @@ namespace The_Lyrical_Lyre
             // 
             this.picDBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picDBox.BackColor = System.Drawing.Color.MidnightBlue;
-            this.picDBox.Location = new System.Drawing.Point(321, 12);
+            this.picDBox.Location = new System.Drawing.Point(428, 15);
+            this.picDBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picDBox.Name = "picDBox";
-            this.picDBox.Size = new System.Drawing.Size(78, 72);
+            this.picDBox.Size = new System.Drawing.Size(104, 89);
             this.picDBox.TabIndex = 3;
             this.picDBox.TabStop = false;
             // 
@@ -108,9 +113,10 @@ namespace The_Lyrical_Lyre
             // 
             this.picJBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picJBox.BackColor = System.Drawing.Color.Orange;
-            this.picJBox.Location = new System.Drawing.Point(529, 12);
+            this.picJBox.Location = new System.Drawing.Point(705, 15);
+            this.picJBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picJBox.Name = "picJBox";
-            this.picJBox.Size = new System.Drawing.Size(78, 72);
+            this.picJBox.Size = new System.Drawing.Size(104, 89);
             this.picJBox.TabIndex = 4;
             this.picJBox.TabStop = false;
             // 
@@ -118,9 +124,10 @@ namespace The_Lyrical_Lyre
             // 
             this.picIBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picIBox.BackColor = System.Drawing.Color.Brown;
-            this.picIBox.Location = new System.Drawing.Point(425, 12);
+            this.picIBox.Location = new System.Drawing.Point(567, 15);
+            this.picIBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picIBox.Name = "picIBox";
-            this.picIBox.Size = new System.Drawing.Size(78, 72);
+            this.picIBox.Size = new System.Drawing.Size(104, 89);
             this.picIBox.TabIndex = 5;
             this.picIBox.TabStop = false;
             // 
@@ -128,9 +135,10 @@ namespace The_Lyrical_Lyre
             // 
             this.picKBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picKBox.BackColor = System.Drawing.Color.Chartreuse;
-            this.picKBox.Location = new System.Drawing.Point(640, 12);
+            this.picKBox.Location = new System.Drawing.Point(853, 15);
+            this.picKBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picKBox.Name = "picKBox";
-            this.picKBox.Size = new System.Drawing.Size(78, 72);
+            this.picKBox.Size = new System.Drawing.Size(104, 89);
             this.picKBox.TabIndex = 6;
             this.picKBox.TabStop = false;
             // 
@@ -138,9 +146,10 @@ namespace The_Lyrical_Lyre
             // 
             this.picLBox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picLBox.BackColor = System.Drawing.Color.Navy;
-            this.picLBox.Location = new System.Drawing.Point(746, 12);
+            this.picLBox.Location = new System.Drawing.Point(995, 15);
+            this.picLBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picLBox.Name = "picLBox";
-            this.picLBox.Size = new System.Drawing.Size(78, 72);
+            this.picLBox.Size = new System.Drawing.Size(104, 89);
             this.picLBox.TabIndex = 7;
             this.picLBox.TabStop = false;
             // 
@@ -149,9 +158,10 @@ namespace The_Lyrical_Lyre
             this.picBorder.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.picBorder.BackColor = System.Drawing.Color.Black;
-            this.picBorder.Location = new System.Drawing.Point(-1, 388);
+            this.picBorder.Location = new System.Drawing.Point(-1, 478);
+            this.picBorder.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picBorder.Name = "picBorder";
-            this.picBorder.Size = new System.Drawing.Size(844, 10);
+            this.picBorder.Size = new System.Drawing.Size(1125, 12);
             this.picBorder.TabIndex = 8;
             this.picBorder.TabStop = false;
             // 
@@ -171,9 +181,10 @@ namespace The_Lyrical_Lyre
             this.lbW.BackColor = System.Drawing.Color.Black;
             this.lbW.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbW.ForeColor = System.Drawing.Color.White;
-            this.lbW.Location = new System.Drawing.Point(36, 388);
+            this.lbW.Location = new System.Drawing.Point(48, 478);
+            this.lbW.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbW.Name = "lbW";
-            this.lbW.Size = new System.Drawing.Size(25, 21);
+            this.lbW.Size = new System.Drawing.Size(31, 26);
             this.lbW.TabIndex = 9;
             this.lbW.Text = "W";
             // 
@@ -183,9 +194,10 @@ namespace The_Lyrical_Lyre
             this.lbA.BackColor = System.Drawing.Color.Black;
             this.lbA.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbA.ForeColor = System.Drawing.Color.White;
-            this.lbA.Location = new System.Drawing.Point(134, 388);
+            this.lbA.Location = new System.Drawing.Point(179, 478);
+            this.lbA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbA.Name = "lbA";
-            this.lbA.Size = new System.Drawing.Size(21, 21);
+            this.lbA.Size = new System.Drawing.Size(26, 26);
             this.lbA.TabIndex = 10;
             this.lbA.Text = "A";
             // 
@@ -195,9 +207,10 @@ namespace The_Lyrical_Lyre
             this.lbS.BackColor = System.Drawing.Color.Black;
             this.lbS.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbS.ForeColor = System.Drawing.Color.White;
-            this.lbS.Location = new System.Drawing.Point(239, 388);
+            this.lbS.Location = new System.Drawing.Point(319, 478);
+            this.lbS.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbS.Name = "lbS";
-            this.lbS.Size = new System.Drawing.Size(20, 21);
+            this.lbS.Size = new System.Drawing.Size(24, 26);
             this.lbS.TabIndex = 11;
             this.lbS.Text = "S";
             // 
@@ -207,9 +220,10 @@ namespace The_Lyrical_Lyre
             this.lbD.BackColor = System.Drawing.Color.Black;
             this.lbD.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbD.ForeColor = System.Drawing.Color.White;
-            this.lbD.Location = new System.Drawing.Point(348, 388);
+            this.lbD.Location = new System.Drawing.Point(464, 478);
+            this.lbD.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbD.Name = "lbD";
-            this.lbD.Size = new System.Drawing.Size(21, 21);
+            this.lbD.Size = new System.Drawing.Size(26, 26);
             this.lbD.TabIndex = 12;
             this.lbD.Text = "D";
             // 
@@ -219,9 +233,10 @@ namespace The_Lyrical_Lyre
             this.lbI.BackColor = System.Drawing.Color.Black;
             this.lbI.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbI.ForeColor = System.Drawing.Color.White;
-            this.lbI.Location = new System.Drawing.Point(453, 388);
+            this.lbI.Location = new System.Drawing.Point(604, 478);
+            this.lbI.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbI.Name = "lbI";
-            this.lbI.Size = new System.Drawing.Size(15, 21);
+            this.lbI.Size = new System.Drawing.Size(18, 26);
             this.lbI.TabIndex = 13;
             this.lbI.Text = "I";
             // 
@@ -231,9 +246,10 @@ namespace The_Lyrical_Lyre
             this.lbJ.BackColor = System.Drawing.Color.Black;
             this.lbJ.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbJ.ForeColor = System.Drawing.Color.White;
-            this.lbJ.Location = new System.Drawing.Point(558, 388);
+            this.lbJ.Location = new System.Drawing.Point(744, 478);
+            this.lbJ.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbJ.Name = "lbJ";
-            this.lbJ.Size = new System.Drawing.Size(21, 21);
+            this.lbJ.Size = new System.Drawing.Size(26, 26);
             this.lbJ.TabIndex = 14;
             this.lbJ.Text = "J";
             // 
@@ -243,9 +259,10 @@ namespace The_Lyrical_Lyre
             this.lbK.BackColor = System.Drawing.Color.Black;
             this.lbK.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbK.ForeColor = System.Drawing.Color.White;
-            this.lbK.Location = new System.Drawing.Point(669, 388);
+            this.lbK.Location = new System.Drawing.Point(892, 478);
+            this.lbK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbK.Name = "lbK";
-            this.lbK.Size = new System.Drawing.Size(21, 21);
+            this.lbK.Size = new System.Drawing.Size(26, 26);
             this.lbK.TabIndex = 15;
             this.lbK.Text = "K";
             // 
@@ -255,9 +272,10 @@ namespace The_Lyrical_Lyre
             this.lbL.BackColor = System.Drawing.Color.Black;
             this.lbL.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbL.ForeColor = System.Drawing.Color.White;
-            this.lbL.Location = new System.Drawing.Point(782, 388);
+            this.lbL.Location = new System.Drawing.Point(1043, 478);
+            this.lbL.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbL.Name = "lbL";
-            this.lbL.Size = new System.Drawing.Size(20, 21);
+            this.lbL.Size = new System.Drawing.Size(24, 26);
             this.lbL.TabIndex = 16;
             this.lbL.Text = "L";
             // 
@@ -266,9 +284,10 @@ namespace The_Lyrical_Lyre
             this.lbScore.AutoSize = true;
             this.lbScore.BackColor = System.Drawing.Color.Transparent;
             this.lbScore.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbScore.Location = new System.Drawing.Point(9, 9);
+            this.lbScore.Location = new System.Drawing.Point(12, 11);
+            this.lbScore.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbScore.Name = "lbScore";
-            this.lbScore.Size = new System.Drawing.Size(41, 19);
+            this.lbScore.Size = new System.Drawing.Size(51, 24);
             this.lbScore.TabIndex = 17;
             this.lbScore.Text = "label1";
             // 
@@ -276,17 +295,23 @@ namespace The_Lyrical_Lyre
             // 
             this.lbStart.AutoSize = true;
             this.lbStart.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbStart.Location = new System.Drawing.Point(289, 222);
+            this.lbStart.Location = new System.Drawing.Point(385, 273);
+            this.lbStart.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbStart.Name = "lbStart";
-            this.lbStart.Size = new System.Drawing.Size(230, 33);
+            this.lbStart.Size = new System.Drawing.Size(284, 42);
             this.lbStart.TabIndex = 18;
             this.lbStart.Text = "Press \"Enter\" to Start";
             // 
+            // timer
+            // 
+            this.timer.Interval = 1000;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
             // Song1Game
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(836, 450);
+            this.ClientSize = new System.Drawing.Size(1115, 554);
             this.Controls.Add(this.lbStart);
             this.Controls.Add(this.lbScore);
             this.Controls.Add(this.lbL);
@@ -306,6 +331,7 @@ namespace The_Lyrical_Lyre
             this.Controls.Add(this.picSBox);
             this.Controls.Add(this.picWBox);
             this.Controls.Add(this.picABox);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Song1Game";
             this.Text = "Song1Game";
             this.Load += new System.EventHandler(this.Song1Game_Load);
@@ -347,5 +373,6 @@ namespace The_Lyrical_Lyre
         private System.Windows.Forms.Label lbL;
         private System.Windows.Forms.Label lbScore;
         private System.Windows.Forms.Label lbStart;
+        private System.Windows.Forms.Timer timer;
     }
 }
