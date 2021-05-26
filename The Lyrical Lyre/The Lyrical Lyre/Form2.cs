@@ -25,6 +25,8 @@ namespace The_Lyrical_Lyre
         // Global Variables to OPEN game
         Song1Game open;
         Song2Game open2;
+        SongGame3 open3;
+        Song4Game open4;
 
         private void btnSong1_Click(object sender, EventArgs e)
         {
@@ -128,6 +130,16 @@ namespace The_Lyrical_Lyre
             {
                 open2 = new Song2Game();
                 open2.Show();
+            }
+            if (song3)
+            {
+                open3 = new SongGame3();
+                open3.Show();
+            }
+            if (song4)
+            {
+                open4 = new Song4Game();
+                open4.Show();
             }
 
         }
