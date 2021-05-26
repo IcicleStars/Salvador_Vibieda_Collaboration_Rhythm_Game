@@ -1,7 +1,7 @@
 ﻿
 namespace The_Lyrical_Lyre
 {
-    partial class Song4Game
+    partial class SongGame3
     {
         /// <summary>
         /// Required designer variable.
@@ -287,7 +287,7 @@ namespace The_Lyrical_Lyre
             this.timer.Interval = 1000;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
-            // Song4Game
+            // SongGame3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -311,10 +311,10 @@ namespace The_Lyrical_Lyre
             this.Controls.Add(this.picSBox);
             this.Controls.Add(this.picWBox);
             this.Controls.Add(this.picABox);
-            this.Name = "Song4Game";
-            this.Text = "Song4Game";
-            this.Load += new System.EventHandler(this.Song4Game_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Song4Game_KeyDown);
+            this.Name = "SongGame3";
+            this.Text = "SongGame3";
+            this.Load += new System.EventHandler(this.SongGame3_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.SongGame3_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.picBorder)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picKBox)).EndInit();

@@ -11,9 +11,9 @@ using System.Media;
 
 namespace The_Lyrical_Lyre
 {
-    public partial class Song4Game : Form
+    public partial class SongGame3 : Form
     {
-        public Song4Game()
+        public SongGame3()
         {
             InitializeComponent();
         }
@@ -26,10 +26,10 @@ namespace The_Lyrical_Lyre
         int tempo = 5, max, score, tick = 0;
         bool continued = false;
 
-        SoundPlayer sound = new SoundPlayer(Properties.Resources.theWindAndTheStarTraveler);
+        SoundPlayer sound = new SoundPlayer(Properties.Resources.adeptusRetirement);
 
 
-        private void Song4Game_Load(object sender, EventArgs e)
+        private void SongGame3_Load(object sender, EventArgs e)
         {
             // Populate pictureBox list 
             notes.Add(picWBox);
@@ -75,6 +75,7 @@ namespace The_Lyrical_Lyre
             animationTimer.Start();
         }
 
+
         // Set Default
         private void setDefaults()
         {
@@ -94,13 +95,14 @@ namespace The_Lyrical_Lyre
 
         }
 
+
         // Reset Picturebox
         private void resetNote(PictureBox note)
         {
             note.Visible = false;
             note.Top = 0;
-        }
-        private void Song4Game_KeyDown(object sender, KeyEventArgs e)
+        } 
+        private void SongGame3_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
@@ -265,7 +267,6 @@ namespace The_Lyrical_Lyre
                 failure();
             }
         }
-
         private void tempoTimer_Tick(object sender, EventArgs e)
         {
             // Create variables
@@ -277,7 +278,6 @@ namespace The_Lyrical_Lyre
                 keyNotes[i].BackColor = Color.Black;
             }
         }
-
         private void timer_Tick(object sender, EventArgs e)
         {
             tick++;
@@ -334,5 +334,7 @@ namespace The_Lyrical_Lyre
             score -= 10;
             lbScore.Text = "Score: " + score;
         }
+
+
     }
 }

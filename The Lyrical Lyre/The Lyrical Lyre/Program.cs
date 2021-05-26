@@ -17,6 +17,8 @@ namespace The_Lyrical_Lyre
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FormMain());
+            Application.Run(new Song4Game());
+            Application.Run(new SongGame3());
             //Application.Run(new Music_Player.Form1());
         }
     }
