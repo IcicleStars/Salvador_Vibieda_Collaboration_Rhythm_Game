@@ -525,6 +525,7 @@ namespace The_Lyrical_Lyre
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox11);
             this.Name = "Song1Game";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Song1Game";
             this.Load += new System.EventHandler(this.Song1Game_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Song1Game_KeyDown);
