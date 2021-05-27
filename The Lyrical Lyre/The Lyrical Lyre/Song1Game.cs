@@ -23,6 +23,8 @@ namespace The_Lyrical_Lyre
         int tempo = 5, max, score, tick;
         SoundPlayer sound = new SoundPlayer(Properties.Resources.guizhongsLullaby);
 
+        bool easy, medium, hard;
+
 
         private void Song1Game_KeyDown(object sender, KeyEventArgs e)
         {
@@ -50,15 +52,15 @@ namespace The_Lyrical_Lyre
             }
             if (e.KeyCode == Keys.W)
             {
-                if (picWBox.Top >= (picBorder.Top - picWBox.Top) - 5 && picWBox.Top <= (picBorder.Top - picWBox.Top) + 5)
+                if (picWBox.Top >= (picBorder.Top - picWBox.Height) - 5 && picWBox.Top <= (picBorder.Top - picWBox.Height) + 5)
                 {
                     perfect();
                 }
-                else if (picWBox.Top > (picBorder.Top - picWBox.Top) + 5 && picWBox.Top < picBorder.Bottom)
+                else if (picWBox.Top > (picBorder.Top - picWBox.Height) + 5 && picWBox.Top < picBorder.Bottom)
                 {
                     great();                
                 }
-                else if (picWBox.Top > picBorder.Bottom || picWBox.Top < picBorder.Top - picWBox.Top - 5)
+                else if (picWBox.Top > picBorder.Bottom || picWBox.Top < picBorder.Top - picWBox.Height - 5)
                 {
                     failure();
                 }
@@ -66,15 +68,15 @@ namespace The_Lyrical_Lyre
 
             if(e.KeyCode == Keys.A)
             {
-                if (picABox.Top >= (picBorder.Top - picABox.Top) - 5 && picABox.Top <= (picBorder.Top - picABox.Top) + 5)
+                if (picABox.Top >= (picBorder.Top - picABox.Height) - 5 && picABox.Top <= (picBorder.Top - picABox.Height) + 5)
                 {
                     perfect();
                 }
-                else if (picABox.Top > (picBorder.Top - picABox.Top) + 5 && picABox.Top < picBorder.Bottom)
+                else if (picABox.Top > (picBorder.Top - picABox.Height) + 5 && picABox.Top < picBorder.Bottom)
                 {
                     great();
                 }
-                else if (picABox.Top > picBorder.Bottom || picABox.Top < picBorder.Top - picABox.Top)
+                else if (picABox.Top > picBorder.Bottom || picABox.Top < picBorder.Top - picABox.Height - 5)
                 {
                     failure();
                 }
@@ -82,15 +84,15 @@ namespace The_Lyrical_Lyre
             
             if (e.KeyCode == Keys.S)
             {
-                if (picSBox.Top >= (picBorder.Top - picSBox.Top) - 5 && picSBox.Top <= (picBorder.Top - picSBox.Top) + 5)
+                if (picSBox.Top >= (picBorder.Top - picSBox.Height) - 5 && picSBox.Top <= (picBorder.Top - picSBox.Height) + 5)
                 {
                     perfect();
                 }
-                else if (picSBox.Top > (picBorder.Top - picSBox.Top) + 5 && picSBox.Top < picBorder.Bottom)
+                else if (picSBox.Top > (picBorder.Top - picSBox.Height) + 5 && picSBox.Top < picBorder.Bottom)
                 {
                     great();
                 }
-                else if (picSBox.Top > picBorder.Bottom || picSBox.Top < picBorder.Top - picSBox.Top)
+                else if (picSBox.Top > picBorder.Bottom || picSBox.Top < picBorder.Top - picSBox.Height - 5)
                 {
                     failure();
                 }
@@ -98,15 +100,15 @@ namespace The_Lyrical_Lyre
 
             if (e.KeyCode == Keys.D)
             {
-                if (picDBox.Top >= (picBorder.Top - picDBox.Top) - 5 && picDBox.Top <= (picBorder.Top - picDBox.Top) + 5)
+                if (picDBox.Top >= (picBorder.Top - picDBox.Height) - 5 && picDBox.Top <= (picBorder.Top - picDBox.Height) + 5)
                 {
                     perfect();
                 }
-                else if (picDBox.Top > (picBorder.Top - picDBox.Top) + 5 && picDBox.Top < picBorder.Bottom)
+                else if (picDBox.Top > (picBorder.Top - picDBox.Height) + 5 && picDBox.Top < picBorder.Bottom)
                 {
                     great();
                 }
-                else if (picDBox.Top > picBorder.Bottom || picDBox.Top < picBorder.Top - picDBox.Top)
+                else if (picDBox.Top > picBorder.Bottom || picDBox.Top < picBorder.Top - picDBox.Height - 5)
                 {
                     failure();
                 }
@@ -114,7 +116,7 @@ namespace The_Lyrical_Lyre
 
             if (e.KeyCode == Keys.I)
             {
-                if (picIBox.Top >= (picBorder.Top - picIBox.Top) - 5 && picIBox.Top <= (picBorder.Top - picIBox.Top) + 5)
+                if (picIBox.Top >= (picBorder.Top - picIBox.Height) - 5 && picIBox.Top <= (picBorder.Top - picIBox.Height) + 5)
                 {
                     perfect();
                 }
@@ -122,7 +124,7 @@ namespace The_Lyrical_Lyre
                 {
                     great();
                 }
-                else if (picIBox.Top > picBorder.Bottom || picIBox.Top < picBorder.Top - picIBox.Top)
+                else if (picIBox.Top > picBorder.Bottom || picIBox.Top < picBorder.Top - picIBox.Top - 5)
                 {
                     failure();
                 }
@@ -134,11 +136,11 @@ namespace The_Lyrical_Lyre
                 {
                     perfect();
                 }
-                else if (picJBox.Top > (picBorder.Top - picJBox.Top) + 5 && picJBox.Top < picBorder.Bottom)
+                else if (picJBox.Top > (picBorder.Top - picJBox.Height) + 5 && picJBox.Top < picBorder.Bottom)
                 {
                     great();
                 }
-                else if (picJBox.Top > picBorder.Bottom || picJBox.Top < picBorder.Top - picJBox.Top)
+                else if (picJBox.Top > picBorder.Bottom || picJBox.Top < picBorder.Top - picJBox.Height - 5)
                 {
                     failure();
                 }
@@ -146,15 +148,15 @@ namespace The_Lyrical_Lyre
 
             if (e.KeyCode == Keys.K)
             {
-                if (picKBox.Top >= (picBorder.Top - picKBox.Top) - 5 && picKBox.Top <= (picBorder.Top - picKBox.Top) + 5)
+                if (picKBox.Top >= (picBorder.Top - picKBox.Height) - 5 && picKBox.Top <= (picBorder.Top - picKBox.Height) + 5)
                 {
                     perfect();
                 }
-                else if (picKBox.Top > (picBorder.Top - picKBox.Top) + 5 && picKBox.Top < picBorder.Bottom)
+                else if (picKBox.Top > (picBorder.Top - picKBox.Height) + 5 && picKBox.Top < picBorder.Bottom)
                 {
                     great();
                 }
-                else if (picKBox.Top > picBorder.Bottom || picKBox.Top < picBorder.Top - picKBox.Top)
+                else if (picKBox.Top > picBorder.Bottom || picKBox.Top < picBorder.Top - picKBox.Height - 5)
                 {
                     failure();
                 }
@@ -162,15 +164,15 @@ namespace The_Lyrical_Lyre
 
             if (e.KeyCode == Keys.L)
             {
-                if (picLBox.Top >= (picBorder.Top - picLBox.Top) - 5 && picLBox.Top <= (picBorder.Top - picLBox.Top) + 5)
+                if (picLBox.Top >= (picBorder.Top - picLBox.Height) - 5 && picLBox.Top <= (picBorder.Top - picLBox.Height) + 5)
                 {
                     perfect();
                 }
-                else if (picLBox.Top > (picBorder.Top - picLBox.Top) + 5 && picLBox.Top < picBorder.Bottom)
+                else if (picLBox.Top > (picBorder.Top - picLBox.Height) + 5 && picLBox.Top < picBorder.Bottom)
                 {
                     great();
                 }
-                else if (picLBox.Top > picBorder.Bottom || picLBox.Top < picBorder.Top - picLBox.Top)
+                else if (picLBox.Top > picBorder.Bottom || picLBox.Top < picBorder.Top - picLBox.Height)
                 {
                     failure();
                 }
@@ -181,12 +183,35 @@ namespace The_Lyrical_Lyre
         {
             // Create variables
             randomNote = notes[generate.Next(max)];
-            callNote(randomNote);
-            /*picBorder.BackColor = Color.Black;
-            for (var i = 0; i < keyNotes.Count; i++)
+
+            if (easy)
             {
-                keyNotes[i].BackColor = Color.Black;
-            }*/
+                callNote(randomNote);            
+                /*picBorder.BackColor = Color.Black;
+                for (var i = 0; i < keyNotes.Count; i++)
+                {
+                    keyNotes[i].BackColor = Color.Black;
+                }*/
+            }
+            else if (medium)
+            {
+                tempoTimer.Interval = 2000;
+                callNote(randomNote); 
+            }
+            else if (hard)
+            {
+                Random yesOrNo = new Random(); 
+                tempoTimer.Interval = 1000;
+                int DoIt = yesOrNo.Next(1, 3); 
+
+                 if (DoIt > 1)
+                {
+                    callNote(randomNote);
+                }
+
+            }
+
+
         }
 
         private void picWBox_Click(object sender, EventArgs e)
@@ -194,9 +219,28 @@ namespace The_Lyrical_Lyre
             callNote(picWBox);
         }
 
-        public Song1Game()
+        public Song1Game(int difficulty)
         {
             InitializeComponent();
+
+            if (difficulty == 1)
+            {
+                easy = true;
+                medium = false;
+                hard = false;
+            }
+            else if (difficulty == 2)
+            {
+                easy = false;
+                medium = true;
+                hard = false;
+            }
+            else if (difficulty == 3)
+            {
+                easy = false;
+                medium = false;
+                hard = true;
+            }
         }
 
         private void Song1Game_Load(object sender, EventArgs e)
@@ -240,6 +284,13 @@ namespace The_Lyrical_Lyre
         private void animationTimer_Tick(object sender, EventArgs e)
         {
             //tick++;
+            if (medium)
+            {
+                tempo = 7; 
+            } else if (hard)
+            {
+                tempo = 10;
+            }
 
             selectedNote.Top += tempo;
 
@@ -293,7 +344,7 @@ namespace The_Lyrical_Lyre
         {
             tick++; 
 
-            if (tick == 30)
+            if (tick == 23)
             {
                 setDefaults();
                 lbStart.Visible = true;
@@ -356,6 +407,16 @@ namespace The_Lyrical_Lyre
             picParonPerfectStatus.Visible = true;
             picParonPerfectStatus.Image = Properties.Resources.Pardon;
             picOkStatus.Visible = false;
+
+            if (medium)
+            {
+                score -= 20;
+            }
+
+            if (hard)
+            {
+                score -= 40;
+            }
         }
     }
 }

@@ -21,6 +21,7 @@ namespace The_Lyrical_Lyre
         bool song1 = false, song2 = false, song3 = false, song4 = false, difficultyIn, selected = false;
         int tick = 0, tick2 = 0;
         public bool easy, medium, hard;
+        int level;
 
         // Global Variables to OPEN game
         Song1Game open;
@@ -109,36 +110,54 @@ namespace The_Lyrical_Lyre
 
         private void btnHard_Click(object sender, EventArgs e)
         {
-            easy = false;
-            medium = false;
-            hard = true;
+            level = 3;
+
+            if (song1)
+            {
+                open = new Song1Game(level);
+                open.Show();
+
+            }
+            if (song2)
+            {
+                open2 = new Song2Game(level);
+                open2.Show();
+            }
+            if (song3)
+            {
+                open3 = new SongGame3(level);
+                open3.Show();
+            }
+            if (song4)
+            {
+                open4 = new Song4Game(level);
+                open4.Show();
+            }
         }
 
         private void btnEasy_Click(object sender, EventArgs e)
         {
-            easy = true;
-            medium = false;
-            hard = false;
+            level = 1;
 
             if (song1)
             {
-                open = new Song1Game();
+                open = new Song1Game(level);
                 open.Show();
             
             }
             if (song2)
             {
-                open2 = new Song2Game();
+                open2 = new Song2Game(level);
                 open2.Show();
             }
             if (song3)
             {
-                open3 = new SongGame3();
+                open3 = new SongGame3(level);
                 open3.Show();
             }
             if (song4)
             {
-                open4 = new Song4Game();
+                open4 = new Song4Game(level);
                 open4.Show();
             }
 
@@ -146,9 +165,29 @@ namespace The_Lyrical_Lyre
 
         private void btnMedium_Click(object sender, EventArgs e)
         {
-            easy = false;
-            medium = true;
-            hard = false;
+            level = 2;
+
+            if (song1)
+            {
+                open = new Song1Game(level);
+                open.Show();
+
+            }
+            if (song2)
+            {
+                open2 = new Song2Game(level);
+                open2.Show();
+            }
+            if (song3)
+            {
+                open3 = new SongGame3(level);
+                open3.Show();
+            }
+            if (song4)
+            {
+                open4 = new Song4Game(level);
+                open4.Show();
+            }
         }
 
         SoundPlayer Music; // Plays selected song
