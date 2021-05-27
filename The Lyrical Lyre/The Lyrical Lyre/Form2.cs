@@ -22,6 +22,7 @@ namespace The_Lyrical_Lyre
         int tick = 0, tick2 = 0;
         public bool easy, medium, hard;
         int level;
+        SoundPlayer sound = new SoundPlayer(Properties.Resources.adeptusRetirement);
 
         // Global Variables to OPEN game
         Song1Game open;
@@ -30,17 +31,30 @@ namespace The_Lyrical_Lyre
         Song4Game open4;
 
         private void btnSong1_Click(object sender, EventArgs e)
-        {
+        {            
+            sound.Stop();
+            sound = new SoundPlayer(Properties.Resources.guizhongsLullaby);
+
             song1 = true;
             song2 = false;
             song3 = false;
             song4 = false;
             animateDifficultyIn();
             animateSongsOut();
+
+
+            sound.Play();
+         
         }
 
         private void btnSong2_Click(object sender, EventArgs e)
-        {
+        {            
+            sound.Stop();
+            sound = new SoundPlayer(Properties.Resources.dawnWinery);
+
+
+            sound.Play();
+
             song1 = false;
             song2 = true;
             song3 = false;
@@ -51,6 +65,13 @@ namespace The_Lyrical_Lyre
 
         private void btnSong3_Click(object sender, EventArgs e)
         {
+
+            sound.Stop();
+            sound = new SoundPlayer(Properties.Resources.adeptusRetirement);
+
+
+            sound.Play();
+
             song1 = false;
             song2 = false;
             song3 = true;
@@ -61,6 +82,11 @@ namespace The_Lyrical_Lyre
 
         private void btnSong4_Click(object sender, EventArgs e)
         {
+            sound.Stop();
+            sound = new SoundPlayer(Properties.Resources.theWindAndTheStarTraveler);
+
+
+            sound.Play();
             song1 = false;
             song2 = false;
             song3 = false;
@@ -110,6 +136,7 @@ namespace The_Lyrical_Lyre
 
         private void btnHard_Click(object sender, EventArgs e)
         {
+            sound.Stop();
             level = 3;
 
             if (song1)
@@ -137,6 +164,7 @@ namespace The_Lyrical_Lyre
 
         private void btnEasy_Click(object sender, EventArgs e)
         {
+            sound.Stop();
             level = 1;
 
             if (song1)
@@ -165,6 +193,7 @@ namespace The_Lyrical_Lyre
 
         private void btnMedium_Click(object sender, EventArgs e)
         {
+            sound.Stop();
             level = 2;
 
             if (song1)
@@ -342,6 +371,7 @@ namespace The_Lyrical_Lyre
 
             // Start Detection Timer
             timerDetectBool.Start();
+            sound.Play();
         }
 
         // METHODS BELOW HERE
