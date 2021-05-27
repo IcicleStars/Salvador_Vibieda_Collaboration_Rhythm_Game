@@ -129,6 +129,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\OK.png" />
+    <None Include="Resources\Pardon.png" />
+    <None Include="Resources\perfect.png" />
+    <None Include="Resources\left arrow.png" />
+    <None Include="Resources\right arrow.png" />
+    <None Include="Resources\up arrow.png" />
+    <None Include="Resources\down arrow.png" />
+    <None Include="Resources\okVenti.png" />
+    <None Include="Resources\pardonVenti.png" />
+    <None Include="Resources\perfectVenti.png" />
+    <None Include="Resources\rounded corners.png" />
     <Content Include="songs\Bensound - Ukulele.wav" />
     <Content Include="songs\BTS - Dynamite.wav" />
     <Content Include="songs\Enhypen - 10 Months.wav" />
@@ -136,8 +147,6 @@
     <Content Include="songs\Loona - 1200.wav" />
     <Content Include="songs\NCT U - Neo Got My Back.wav" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

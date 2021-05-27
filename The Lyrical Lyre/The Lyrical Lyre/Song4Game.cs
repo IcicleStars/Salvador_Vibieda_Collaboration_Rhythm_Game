@@ -85,11 +85,11 @@ namespace The_Lyrical_Lyre
                 notes[index].Visible = false;
 
             }
-            for (var i = 0; i < keyNotes.Count; i++)
+           /* for (var i = 0; i < keyNotes.Count; i++)
             {
                 keyNotes[i].BackColor = Color.Black;
-            }
-            lbScore.Text = "Score: " + score;
+            }*/
+            lbScore.Text = score.ToString();
 
 
         }
@@ -271,12 +271,13 @@ namespace The_Lyrical_Lyre
             // Create variables
             randomNote = notes[generate.Next(max)];
             callNote(randomNote);
-            picBorder.BackColor = Color.Black;
+            /*picBorder.BackColor = Color.Black;
             for (var i = 0; i < keyNotes.Count; i++)
             {
                 keyNotes[i].BackColor = Color.Black;
-            }
+            }*/
         }
+
 
         private void timer_Tick(object sender, EventArgs e)
         {
@@ -298,13 +299,17 @@ namespace The_Lyrical_Lyre
         {
             resetNote(selectedNote);
             animationTimer.Stop();
-            picBorder.BackColor = Color.Blue;
-            for (var i = 0; i < keyNotes.Count; i++)
+            //picBorder.BackColor = Color.Blue;
+           /* for (var i = 0; i < keyNotes.Count; i++)
             {
                 keyNotes[i].BackColor = Color.Blue;
-            }
+            }*/
             score += 100;
-            lbScore.Text = "Score: " + score;
+            lbScore.Text = score.ToString();
+            picStatusScore.Image = Properties.Resources.perfectVenti;
+            picParonPerfectStatus.Image = Properties.Resources.perfect;
+            picParonPerfectStatus.Visible = true;
+            picOkStatus.Visible = false;
         }
 
         // Great!
@@ -312,13 +317,21 @@ namespace The_Lyrical_Lyre
         {
             resetNote(selectedNote);
             animationTimer.Stop();
-            picBorder.BackColor = Color.Yellow;
-            for (var i = 0; i < keyNotes.Count; i++)
+            //picBorder.BackColor = Color.Yellow;
+           /* for (var i = 0; i < keyNotes.Count; i++)
             {
                 keyNotes[i].BackColor = Color.Yellow;
-            }
+            }*/
             score += 25;
-            lbScore.Text = "Score: " + score;
+            lbScore.Text = score.ToString();
+            picStatusScore.Image = Properties.Resources.okVenti;
+            picParonPerfectStatus.Visible = false;
+            picOkStatus.Visible = true;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
 
         // Failure
@@ -326,13 +339,31 @@ namespace The_Lyrical_Lyre
         {
             resetNote(selectedNote);
             animationTimer.Stop();
-            picBorder.BackColor = Color.Red;
-            for (var i = 0; i < keyNotes.Count; i++)
+            //picBorder.BackColor = Color.Red;
+            /*for (var i = 0; i < keyNotes.Count; i++)
             {
                 keyNotes[i].BackColor = Color.Red;
-            }
+            }*/
             score -= 10;
-            lbScore.Text = "Score: " + score;
+            lbScore.Text = score.ToString();
+            picStatusScore.Image = Properties.Resources.pardonVenti;
+            picParonPerfectStatus.Visible = true;
+            picParonPerfectStatus.Image = Properties.Resources.Pardon;
+            picOkStatus.Visible = false;
+        }
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbScore_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picStatusScore_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
